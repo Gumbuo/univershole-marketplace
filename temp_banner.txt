@@ -1,0 +1,10 @@
+        {/* Banner Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/banner.jpg"
+            alt="FoxHole's Marketplace Banner"
+            className="w-full h-full object-cover opacity-40"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-900/50 to-gray-900"></div>
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-600/20 to-green-600/20"></div>

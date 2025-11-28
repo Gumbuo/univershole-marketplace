@@ -243,7 +243,15 @@ export default function Marketplace() {
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-cyan-950 to-gray-900 text-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden border-b border-cyan-500/30">
-        <div className="absolute inset-0 bg-gradient-to-r from-cyan-600/20 to-green-600/20"></div>
+        {/* Banner Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/banner.jpg"
+            alt="FoxHole's Marketplace Banner"
+            className="w-full h-full object-cover opacity-40"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-900/50 to-gray-900"></div>
+        </div>
         <div className="container mx-auto px-4 py-16 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
