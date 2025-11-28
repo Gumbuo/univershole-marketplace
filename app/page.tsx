@@ -427,7 +427,7 @@ export default function Marketplace() {
       ]
     }
   ]
-n  // Separate characters and objects
+  // Separate characters and objects
   const characters = products.filter(p => p.animations);
   const objects = products.filter(p => p.items);
 
