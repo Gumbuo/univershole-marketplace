@@ -6,6 +6,7 @@ import { CryptoPayment } from "./components/CryptoPayment";
 import { SolanaPayment } from "./components/SolanaPayment";
 import { BitcoinPayment } from "./components/BitcoinPayment";
 import { AnimatedCharacter } from "./components/AnimatedCharacter";
+import { VideoAdPopup } from "./components/VideoAdPopup";
 
 
 declare global {
@@ -734,6 +735,9 @@ export default function Marketplace() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-cyan-950 to-gray-900 text-white">
+      {/* Video Ad Popup */}
+      <VideoAdPopup />
+
       {/* Hero Section */}
       <section className="relative overflow-hidden border-b border-cyan-500/30">
         {/* Banner Image */}
