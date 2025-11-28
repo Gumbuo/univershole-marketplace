@@ -3,7 +3,7 @@ import { kv } from '@/lib/kv';
 
 export async function POST(request: NextRequest) {
   try {
-    const { wallet, productId, txHash } = await request.json();
+    const { wallet, productId, txHash, chainId, chainName, amount, symbol } = await request.json();
 
     if (!wallet || !productId) {
       return NextResponse.json(
@@ -12,21 +12,22 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Normalize wallet address to lowercase
     const normalizedWallet = wallet.toLowerCase();
 
-    // Store purchase record
     const purchaseKey = `purchase:${normalizedWallet}:${productId}`;
     const purchaseData = {
       wallet: normalizedWallet,
       productId,
       purchasedAt: Date.now(),
       txHash: txHash || null,
+      chainId: chainId || null,
+      chainName: chainName || null,
+      amount: amount || null,
+      symbol: symbol || null,
     };
 
     await kv.set(purchaseKey, JSON.stringify(purchaseData));
 
-    // Also add to user's purchase list
     const userPurchasesKey = `user:${normalizedWallet}:purchases`;
     await kv.sadd(userPurchasesKey, productId);
 
@@ -44,7 +45,6 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// GET endpoint to check if user has purchased an item
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
@@ -61,7 +61,6 @@ export async function GET(request: NextRequest) {
     const normalizedWallet = wallet.toLowerCase();
 
     if (productId) {
-      // Check specific product
       const purchaseKey = `purchase:${normalizedWallet}:${productId}`;
       const purchase = await kv.get(purchaseKey);
 
@@ -70,7 +69,6 @@ export async function GET(request: NextRequest) {
         purchase: purchase ? JSON.parse(purchase as string) : null,
       });
     } else {
-      // Get all purchases for user
       const userPurchasesKey = `user:${normalizedWallet}:purchases`;
       const purchases = await kv.smembers(userPurchasesKey);
 
