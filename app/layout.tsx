@@ -3,6 +3,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://univershole.xyz'),
   title: "FoxHole's Pixel Characters and Maps Marketplace",
   description: "Buy premium pixel art game characters and maps with crypto or PayPal - $5 each with commercial license",
   openGraph: {
