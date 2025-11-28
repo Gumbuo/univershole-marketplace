@@ -19,9 +19,23 @@ export function VideoAdPopup() {
     const hasSeenAd = sessionStorage.getItem("hasSeenVideoAd");
 
     if (!hasSeenAd) {
-      // Randomly select a video
-      const randomIndex = Math.floor(Math.random() * AD_VIDEOS.length);
-      setSelectedVideo(AD_VIDEOS[randomIndex]);
+      // Get last played video from localStorage to avoid repeats
+      const lastPlayed = localStorage.getItem("lastVideoAd");
+
+      // Filter out the last played video if we have more than 1
+      let availableVideos = AD_VIDEOS;
+      if (lastPlayed && AD_VIDEOS.length > 1) {
+        availableVideos = AD_VIDEOS.filter(v => v !== lastPlayed);
+      }
+
+      // Randomly select from available videos
+      const randomIndex = Math.floor(Math.random() * availableVideos.length);
+      const selected = availableVideos[randomIndex];
+
+      // Save this as last played
+      localStorage.setItem("lastVideoAd", selected);
+
+      setSelectedVideo(selected);
       setIsOpen(true);
     }
   }, []);
