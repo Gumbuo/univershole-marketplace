@@ -15,10 +15,10 @@ export default function Marketplace() {
   const products = [
     {
       id: "yellow-ghost-specter",
-      name: "Yellow Ghost Specter",
-      price: 5.00,
+      name: "Yellow Ghost Specter [TEST]",
+      price: 0.30,
       image: "/characters/yellow-ghost-specter.png",
-      description: "8-direction animated ghost character with 14 combat animations",
+      description: "🧪 TEST ITEM - 0.0001 ETH only! 8-direction animated ghost character with 14 combat animations",
       animations: "112 total animations (14 types × 8 directions)",
       features: [
         "Walking, running, idle animations",
@@ -363,11 +363,14 @@ export default function Marketplace() {
                 {!paymentMethod ? (
                   <div className="space-y-4">
                     <button
-                      onClick={() => setPaymentMethod("paypal")}
-                      className="w-full py-4 bg-blue-600 hover:bg-blue-700 rounded-lg font-bold transition-all flex items-center justify-center gap-2"
+                      disabled
+                      className="w-full py-4 bg-gray-600 cursor-not-allowed rounded-lg font-bold transition-all flex items-center justify-center gap-2 opacity-50"
                     >
                       <span>💳</span>
-                      Pay with PayPal
+                      <div className="flex flex-col items-center">
+                        <span>Pay with PayPal</span>
+                        <span className="text-xs text-gray-400">Coming Soon</span>
+                      </div>
                     </button>
 
                     <button
