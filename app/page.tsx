@@ -1,0 +1,438 @@
+"use client";
+
+import { useState } from "react";
+import { PayPalPayment } from "./components/PayPalPayment";
+import { CryptoPayment } from "./components/CryptoPayment";
+import { AnimatedCharacter } from "./components/AnimatedCharacter";
+
+export default function Marketplace() {
+  const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
+  const [selectedPrice, setSelectedPrice] = useState<number>(0);
+  const [selectedName, setSelectedName] = useState<string>("");
+  const [paymentMethod, setPaymentMethod] = useState<"paypal" | "crypto" | null>(null);
+  const [paymentSuccess, setPaymentSuccess] = useState(false);
+
+  const products = [
+    {
+      id: "yellow-ghost-specter",
+      name: "Yellow Ghost Specter",
+      price: 5.00,
+      image: "/characters/yellow-ghost-specter.png",
+      description: "8-direction animated ghost character with 14 combat animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Combat moves: punches, kicks, fireballs",
+        "Special attacks: hurricane kick, flying kick",
+        "Getting hit & death animations"
+      ]
+    },
+    {
+      id: "orange-ghost-specter",
+      name: "Orange Ghost Specter",
+      price: 5.00,
+      image: "/characters/orange-ghost-specter.png",
+      description: "Fiery orange ghost with full combat animation set",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Combat moves: punches, kicks, fireballs",
+        "Special attacks: hurricane kick, flying kick",
+        "Getting hit & death animations"
+      ]
+    },
+    {
+      id: "red-ghost-specter",
+      name: "Red Ghost Specter",
+      price: 5.00,
+      image: "/characters/red-ghost-specter.png",
+      description: "Aggressive red ghost with complete animation pack",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Combat moves: punches, kicks, fireballs",
+        "Special attacks: hurricane kick, flying kick",
+        "Getting hit & death animations"
+      ]
+    },
+    {
+      id: "green-ghost-specter",
+      name: "Green Ghost Specter",
+      price: 5.00,
+      image: "/characters/green-ghost-specter.png",
+      description: "Toxic green ghost with full combat animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Combat moves: punches, kicks, fireballs",
+        "Special attacks: hurricane kick, flying kick",
+        "Getting hit & death animations"
+      ]
+    },
+    {
+      id: "blue-ghost-specter",
+      name: "Blue Ghost Specter",
+      price: 5.00,
+      image: "/characters/blue-ghost-specter.png",
+      description: "Icy blue ghost with complete animation set",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Combat moves: punches, kicks, fireballs",
+        "Special attacks: hurricane kick, flying kick",
+        "Getting hit & death animations"
+      ]
+    },
+    {
+      id: "fire-elemental",
+      name: "Fire Elemental",
+      price: 5.00,
+      image: "/characters/fire-elemental.png",
+      description: "Blazing fire elemental with explosive animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Powerful fireball attacks",
+        "Hurricane kick, flying kick",
+        "Combat and reaction animations"
+      ]
+    },
+    {
+      id: "steam-elemental",
+      name: "Steam Elemental",
+      price: 5.00,
+      image: "/characters/steam-elemental.png",
+      description: "Mystical steam elemental with flowing animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Steam-based attacks",
+        "Full combat move set",
+        "Unique visual effects"
+      ]
+    },
+    {
+      id: "frost-elemental",
+      name: "Frost Elemental",
+      price: 5.00,
+      image: "/characters/frost-elemental.png",
+      description: "Frozen frost elemental with icy animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Ice-based attacks",
+        "Complete combat set",
+        "Freezing effects"
+      ]
+    },
+    {
+      id: "blood-elemental",
+      name: "Blood Elemental",
+      price: 5.00,
+      image: "/characters/blood-elemental.png",
+      description: "Dark blood elemental with menacing animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Blood-based attacks",
+        "Full combat animations",
+        "Dark visual effects"
+      ]
+    },
+    {
+      id: "acid-elemental",
+      name: "Acid Elemental",
+      price: 5.00,
+      image: "/characters/acid-elemental.png",
+      description: "Corrosive acid elemental with toxic animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Acid splash attacks",
+        "Complete combat set",
+        "Toxic effects"
+      ]
+    },
+    {
+      id: "ice-golem",
+      name: "Ice Golem",
+      price: 5.00,
+      image: "/characters/ice-golem.png",
+      description: "Massive ice golem with powerful animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Heavy walking & running",
+        "Devastating melee attacks",
+        "Ground pound abilities",
+        "Boss-tier animations"
+      ]
+    },
+    {
+      id: "shadow-being",
+      name: "Shadow Being",
+      price: 5.00,
+      image: "/characters/shadow-being.png",
+      description: "Mysterious shadow entity with dark animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Ethereal movement",
+        "Shadow-based attacks",
+        "Stealth animations",
+        "Unique visual style"
+      ]
+    },
+    {
+      id: "ghost-specter",
+      name: "Ghost Specter",
+      price: 5.00,
+      image: "/characters/ghost-specter.png",
+      description: "Classic ghost specter with full combat set",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Combat moves: punches, kicks, fireballs",
+        "Special attacks",
+        "Reaction animations"
+      ]
+    },
+    {
+      id: "skeleton-warrior",
+      name: "Skeleton Warrior",
+      price: 5.00,
+      image: "/characters/skeleton-warrior.png",
+      description: "Undead skeleton warrior with melee combat",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Armored skeleton design",
+        "Sword combat animations",
+        "Shield blocks & parries",
+        "Bone-rattling attacks"
+      ]
+    },
+    {
+      id: "combat-robot",
+      name: "Combat Robot",
+      price: 5.00,
+      image: "/characters/combat-robot.png",
+      description: "Advanced combat robot with tech animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Mechanical movement",
+        "Energy weapon attacks",
+        "Jet boost abilities",
+        "Sci-fi combat style"
+      ]
+    },
+    {
+      id: "alien-overlord-boss",
+      name: "Alien Overlord Boss",
+      price: 5.00,
+      image: "/characters/alien-overlord-boss.png",
+      description: "Ultimate alien boss with premium animations",
+      animations: "Unique boss-tier animation set",
+      features: [
+        "Epic boss presence",
+        "Devastating attack patterns",
+        "Phase-change animations",
+        "Premium quality assets"
+      ]
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-cyan-950 to-gray-900 text-white">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden border-b border-cyan-500/30">
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-600/20 to-green-600/20"></div>
+        <div className="container mx-auto px-4 py-16 relative z-10">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
+              FoxHole's Pixel Characters and Maps Marketplace
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-300 mb-4">
+              Premium Pixel Art Game Characters
+            </p>
+            <p className="text-lg text-gray-400 mb-8">
+              Pay with crypto or PayPal • Instant download • Commercial license included
+            </p>
+            <div className="flex justify-center gap-4 text-sm text-gray-400">
+              <span>✓ 8-Direction Sprites</span>
+              <span>✓ Combat Animations</span>
+              <span>✓ Ready for Godot/Unity</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Products Grid */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12 text-cyan-400">
+            Available Characters
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            {products.map((product) => (
+              <div
+                key={product.id}
+                className="bg-black/40 border border-cyan-500/30 rounded-xl p-6 hover:border-cyan-500 transition-all hover:scale-105"
+              >
+                <div className="aspect-square bg-gray-800 rounded-lg mb-4 flex items-center justify-center p-8">
+                  <AnimatedCharacter
+                    characterId={product.id}
+                    characterName={product.name}
+                    fallbackImage={product.image}
+                  />
+                </div>
+
+                <h3 className="text-xl font-bold mb-2">{product.name}</h3>
+                <p className="text-3xl font-bold text-cyan-400 mb-3">
+                  ${product.price.toFixed(2)}
+                </p>
+
+                <p className="text-gray-400 text-sm mb-4">{product.description}</p>
+
+                <div className="mb-4 text-xs text-gray-500">
+                  {product.animations}
+                </div>
+
+                <ul className="space-y-1 mb-6 text-sm">
+                  {product.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className="text-green-400 mt-0.5">✓</span>
+                      <span className="text-gray-300">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <button
+                  onClick={() => {
+                    setSelectedProduct(product.id);
+                    setSelectedPrice(product.price);
+                    setSelectedName(product.name);
+                    setPaymentMethod(null);
+                    setPaymentSuccess(false);
+                  }}
+                  className="w-full py-3 bg-gradient-to-r from-cyan-600 to-green-600 hover:from-cyan-700 hover:to-green-700 rounded-lg font-bold transition-all"
+                >
+                  Buy Now
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Payment Modal */}
+      {selectedProduct && (
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="bg-gray-900 border border-cyan-500 rounded-2xl p-8 max-w-md w-full max-h-[90vh] overflow-y-auto">
+            {paymentSuccess ? (
+              <div className="text-center space-y-4">
+                <div className="text-6xl mb-4">✅</div>
+                <h3 className="text-2xl font-bold text-green-400">Payment Successful!</h3>
+                <p className="text-gray-400">
+                  Thank you for your purchase of {selectedName}
+                </p>
+                <div className="bg-gray-800 p-6 rounded-lg">
+                  <p className="text-sm text-gray-400 mb-2">Your download will begin shortly.</p>
+                  <p className="text-xs text-gray-500">
+                    Check your email for the download link and commercial license.
+                  </p>
+                </div>
+                <button
+                  onClick={() => {
+                    setSelectedProduct(null);
+                    setPaymentMethod(null);
+                    setPaymentSuccess(false);
+                  }}
+                  className="w-full py-3 bg-cyan-600 hover:bg-cyan-700 rounded-lg transition-all font-bold"
+                >
+                  Continue Shopping
+                </button>
+              </div>
+            ) : (
+              <>
+                <h3 className="text-2xl font-bold mb-4">
+                  {paymentMethod ? "Complete Payment" : "Choose Payment Method"}
+                </h3>
+                <p className="text-gray-400 mb-6">
+                  {selectedName} - ${selectedPrice.toFixed(2)}
+                </p>
+
+                {!paymentMethod ? (
+                  <div className="space-y-4">
+                    <button
+                      onClick={() => setPaymentMethod("paypal")}
+                      className="w-full py-4 bg-blue-600 hover:bg-blue-700 rounded-lg font-bold transition-all flex items-center justify-center gap-2"
+                    >
+                      <span>💳</span>
+                      Pay with PayPal
+                    </button>
+
+                    <button
+                      onClick={() => setPaymentMethod("crypto")}
+                      className="w-full py-4 bg-gradient-to-r from-cyan-600 to-green-600 hover:from-cyan-700 hover:to-green-700 rounded-lg font-bold transition-all flex items-center justify-center gap-2"
+                    >
+                      <span>🔐</span>
+                      Pay with Crypto (ETH)
+                    </button>
+
+                    <button
+                      onClick={() => {
+                        setSelectedProduct(null);
+                        setPaymentMethod(null);
+                      }}
+                      className="w-full py-3 bg-gray-700 hover:bg-gray-600 rounded-lg transition-all"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                ) : (
+                  <div className="space-y-4">
+                    {paymentMethod === "paypal" ? (
+                      <PayPalPayment
+                        amount={selectedPrice}
+                        characterName={selectedName}
+                        onSuccess={() => setPaymentSuccess(true)}
+                        onError={(error) => {
+                          console.error("Payment error:", error);
+                          alert("Payment failed. Please try again.");
+                        }}
+                      />
+                    ) : (
+                      <CryptoPayment
+                        amount={selectedPrice}
+                        characterName={selectedName}
+                        onSuccess={() => setPaymentSuccess(true)}
+                        onError={(error) => {
+                          console.error("Payment error:", error);
+                          alert("Payment failed. Please try again.");
+                        }}
+                      />
+                    )}
+
+                    <button
+                      onClick={() => setPaymentMethod(null)}
+                      className="w-full py-3 bg-gray-700 hover:bg-gray-600 rounded-lg transition-all"
+                    >
+                      ← Back to Payment Methods
+                    </button>
+                  </div>
+                )}
+              </>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Footer */}
+      <footer className="bg-black/50 border-t border-cyan-800 py-8 mt-16">
+        <div className="container mx-auto px-4 text-center text-gray-500">
+          <p>© 2024 FoxHole's Pixel Characters and Maps Marketplace. All characters include commercial license.</p>
+          <p className="mt-2 text-sm">Instant download • Crypto & PayPal accepted</p>
+        </div>
+      </footer>
+    </div>
+  );
+}
