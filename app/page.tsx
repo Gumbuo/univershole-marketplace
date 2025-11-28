@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { PayPalPayment } from "./components/PayPalPayment";
 import { CryptoPayment } from "./components/CryptoPayment";
+import { SolanaPayment } from "./components/SolanaPayment";
+import { BitcoinPayment } from "./components/BitcoinPayment";
 import { AnimatedCharacter } from "./components/AnimatedCharacter";
 
 export default function Marketplace() {
@@ -10,7 +12,7 @@ export default function Marketplace() {
   const [downloadLink, setDownloadLink] = useState<string>("");
   const [selectedPrice, setSelectedPrice] = useState<number>(0);
   const [selectedName, setSelectedName] = useState<string>("");
-  const [paymentMethod, setPaymentMethod] = useState<"paypal" | "crypto" | null>(null);
+  const [paymentMethod, setPaymentMethod] = useState<"paypal" | "crypto" | "solana" | "bitcoin" | null>(null);
   const [paymentSuccess, setPaymentSuccess] = useState(false);
 
   const products = [
@@ -499,9 +501,31 @@ export default function Marketplace() {
                       className="w-full py-4 bg-gradient-to-r from-cyan-600 to-green-600 hover:from-cyan-700 hover:to-green-700 rounded-lg font-bold transition-all flex items-center justify-center gap-2"
                     >
                       <span>🔐</span>
-                      Pay with Crypto (ETH)
+                      Pay with EVM Chains
                     </button>
 
+
+                    <button
+                      onClick={() => setPaymentMethod("solana")}
+                      className="w-full py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 rounded-lg font-bold transition-all flex items-center justify-center gap-2"
+                    >
+                      <span>👻</span>
+                      <div className="flex flex-col items-center">
+                        <span>Pay with Solana</span>
+                        <span className="text-xs">SOL via Phantom</span>
+                      </div>
+                    </button>
+
+                    <button
+                      onClick={() => setPaymentMethod("bitcoin")}
+                      className="w-full py-4 bg-gradient-to-r from-orange-600 to-yellow-600 hover:from-orange-700 hover:to-yellow-700 rounded-lg font-bold transition-all flex items-center justify-center gap-2"
+                    >
+                      <span>₿</span>
+                      <div className="flex flex-col items-center">
+                        <span>Pay with Bitcoin</span>
+                        <span className="text-xs">BTC Manual Payment</span>
+                      </div>
+                    </button>
                     <button
                       onClick={() => {
                         setSelectedProduct(null);
@@ -524,14 +548,13 @@ export default function Marketplace() {
                           alert("Payment failed. Please try again.");
                         }}
                       />
-                    ) : (
+                    ) : paymentMethod === "crypto" ? (
                       <CryptoPayment
                         amount={selectedPrice}
                         characterName={selectedName}
                         productId={selectedProduct || ""}
                         onSuccess={() => {
                           setPaymentSuccess(true);
-                          // Store wallet address for download link
                           if (typeof window !== "undefined" && window.ethereum) {
                             window.ethereum.request({ method: 'eth_accounts' })
                               .then((accounts: string[]) => {
@@ -546,7 +569,37 @@ export default function Marketplace() {
                           alert("Payment failed. Please try again.");
                         }}
                       />
-                    )}
+                    ) : paymentMethod === "solana" ? (
+                      <SolanaPayment
+                        amount={selectedPrice}
+                        characterName={selectedName}
+                        productId={selectedProduct || ""}
+                        onSuccess={() => {
+                          setPaymentSuccess(true);
+                          if (typeof window !== "undefined" && window.solana) {
+                            setDownloadLink(`/api/download?wallet=${window.solana.publicKey.toString()}&productId=${selectedProduct}`);
+                          }
+                        }}
+                        onError={(error) => {
+                          console.error("Payment error:", error);
+                          alert("Payment failed. Please try again.");
+                        }}
+                      />
+                    ) : paymentMethod === "bitcoin" ? (
+                      <BitcoinPayment
+                        amount={selectedPrice}
+                        characterName={selectedName}
+                        productId={selectedProduct || ""}
+                        onSuccess={() => {
+                          setPaymentSuccess(true);
+                          setDownloadLink(`/api/download?wallet=bitcoin&productId=${selectedProduct}`);
+                        }}
+                        onError={(error) => {
+                          console.error("Payment error:", error);
+                          alert("Payment failed. Please try again.");
+                        }}
+                      />
+                    ) : null}
 
                     <button
                       onClick={() => setPaymentMethod(null)}
