@@ -1,11 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { PayPalPayment } from "./components/PayPalPayment";
 import { CryptoPayment } from "./components/CryptoPayment";
 import { SolanaPayment } from "./components/SolanaPayment";
 import { BitcoinPayment } from "./components/BitcoinPayment";
 import { AnimatedCharacter } from "./components/AnimatedCharacter";
+
+
+declare global {
+  interface Window {
+    ethereum?: any;
+  }
+}
 
 export default function Marketplace() {
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
@@ -14,6 +21,72 @@ export default function Marketplace() {
   const [selectedName, setSelectedName] = useState<string>("");
   const [paymentMethod, setPaymentMethod] = useState<"paypal" | "crypto" | "solana" | "bitcoin" | null>(null);
   const [paymentSuccess, setPaymentSuccess] = useState(false);
+  const [purchasedProducts, setPurchasedProducts] = useState<Set<string>>(new Set());
+  const [connectedWallet, setConnectedWallet] = useState<string | null>(null);
+
+  // Check for connected wallet and fetch purchased products
+  useEffect(() => {
+    checkWalletConnection();
+
+    if (typeof window !== 'undefined' && window.ethereum) {
+      window.ethereum.on('accountsChanged', handleAccountsChanged);
+      window.ethereum.on('disconnect', handleDisconnect);
+    }
+
+    return () => {
+      if (typeof window !== 'undefined' && window.ethereum) {
+        window.ethereum.removeListener?.('accountsChanged', handleAccountsChanged);
+        window.ethereum.removeListener?.('disconnect', handleDisconnect);
+      }
+    };
+  }, []);
+
+  const handleAccountsChanged = (accounts: string[]) => {
+    if (accounts.length === 0) {
+      setConnectedWallet(null);
+      setPurchasedProducts(new Set());
+    } else {
+      setConnectedWallet(accounts[0]);
+      fetchPurchasedProducts(accounts[0]);
+    }
+  };
+
+  const handleDisconnect = () => {
+    setConnectedWallet(null);
+    setPurchasedProducts(new Set());
+  };
+
+  const checkWalletConnection = async () => {
+    try {
+      if (typeof window !== 'undefined' && window.ethereum) {
+        const accounts = await window.ethereum.request({ method: 'eth_accounts' });
+        if (accounts && accounts.length > 0) {
+          setConnectedWallet(accounts[0]);
+          fetchPurchasedProducts(accounts[0]);
+        }
+      }
+    } catch (error) {
+      console.error('Error checking wallet connection:', error);
+    }
+  };
+
+  const fetchPurchasedProducts = async (wallet: string) => {
+    try {
+      const response = await fetch(`/api/purchase?wallet=${wallet}`);
+      const data = await response.json();
+      if (data.purchases) {
+        setPurchasedProducts(new Set(data.purchases));
+      }
+    } catch (error) {
+      console.error('Error fetching purchased products:', error);
+    }
+  };
+
+  const handleDownload = (productId: string) => {
+    if (connectedWallet) {
+      window.location.href = `/api/download?wallet=${connectedWallet}&productId=${productId}`;
+    }
+  };
 
   const products = [
     {
@@ -314,20 +387,7 @@ export default function Marketplace() {
                       <span className="text-gray-300">{feature}</span>
                     </li>
                   ))}
-                </ul>
-
-                <button
-                  onClick={() => {
-                    setSelectedProduct(product.id);
-                    setSelectedPrice(product.price);
-                    setSelectedName(product.name);
-                    setPaymentMethod(null);
-                    setPaymentSuccess(false);
-                  }}
-                  className="w-full py-3 bg-gradient-to-r from-cyan-600 to-green-600 hover:from-cyan-700 hover:to-green-700 rounded-lg font-bold transition-all"
-                >
-                  Buy Now
-                </button>
+</ul>                {purchasedProducts.has(product.id) ? (                  <button                    onClick={() => handleDownload(product.id)}                    className="w-full py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 rounded-lg font-bold transition-all"                  >                    Download                  </button>                ) : (                  <button                    onClick={() => {                      setSelectedProduct(product.id);                      setSelectedPrice(product.price);                      setSelectedName(product.name);                      setPaymentMethod(null);                      setPaymentSuccess(false);                    }}                    className="w-full py-3 bg-gradient-to-r from-cyan-600 to-green-600 hover:from-cyan-700 hover:to-green-700 rounded-lg font-bold transition-all"                  >                    Buy Now                  </button>                )}
               </div>
             ))}
           </div>
