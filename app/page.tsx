@@ -91,10 +91,10 @@ export default function Marketplace() {
   const products = [
     {
       id: "yellow-ghost-specter",
-      name: "Yellow Ghost Specter [TEST]",
-      price: 0.30,
+      name: "Yellow Ghost Specter",
+      price: 3.00,
       image: "/characters/yellow-ghost-specter.png",
-      description: "🧪 TEST ITEM - 0.0001 ETH only! 8-direction animated ghost character with 14 combat animations",
+      description: "8-direction animated ghost character with 18 combat animations",
       animations: "112 total animations (14 types × 8 directions)",
       features: [
         "Walking, running, idle animations",
