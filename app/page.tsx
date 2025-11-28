@@ -313,7 +313,120 @@ export default function Marketplace() {
         "Premium quality assets"
       ]
     }
-  ];
+  ,
+    {
+      id: "crystal-collection",
+      name: "Crystal Collection",
+      price: 2,
+      image: "/objects/crystal-collection.png",
+      description: "Collection of 5 colorful crystal objects for your game",
+      items: "5 crystal variants (blue, green, purple, red)",
+      features: [
+        "PNG with transparency",
+        "Perfect for collectibles or power-ups",
+        "Multiple color variants",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "energy-barrier-collection",
+      name: "Energy Barrier Collection",
+      price: 2,
+      image: "/objects/energy-barrier-collection.png",
+      description: "Set of 4 animated-style energy barriers",
+      items: "4 barrier colors (blue, green, purple, red)",
+      features: [
+        "PNG with transparency",
+        "Perfect for gates and obstacles",
+        "Multiple color variants",
+        "Sci-fi themed design"
+      ]
+    },
+    {
+      id: "bridge-collection",
+      name: "Bridge Collection",
+      price: 2,
+      image: "/objects/bridge-collection.png",
+      description: "Complete bridge tileset with 16 pieces",
+      items: "16 bridge pieces (4 colors × 4 sections)",
+      features: [
+        "Tileable bridge sections",
+        "Left, middle, right tiles",
+        "4 color variants",
+        "Build bridges of any length"
+      ]
+    },
+    {
+      id: "toxic-vent-collection",
+      name: "Toxic Vent Collection",
+      price: 2,
+      image: "/objects/toxic-vent-collection.png",
+      description: "Set of 4 toxic vent hazards",
+      items: "4 vent colors (blue, green, purple, red)",
+      features: [
+        "PNG with transparency",
+        "Perfect for hazard zones",
+        "Multiple color variants",
+        "Ideal for sci-fi dungeons"
+      ]
+    },
+    {
+      id: "portal-collection",
+      name: "Portal Collection",
+      price: 2,
+      image: "/objects/portal-collection.png",
+      description: "Collection of 5 portal sprites",
+      items: "5 portal colors (blue, green, purple, red, yellow)",
+      features: [
+        "PNG with transparency",
+        "Perfect for teleportation",
+        "Multiple color variants",
+        "Level transitions"
+      ]
+    },
+    {
+      id: "barrier-tile-collection",
+      name: "Barrier Tile Collection",
+      price: 2,
+      image: "/objects/barrier-tile-collection.png",
+      description: "Tileable barrier set with 12 pieces",
+      items: "12 barrier tiles (4 colors × 3 sections)",
+      features: [
+        "Tileable sections",
+        "Top, middle, bottom tiles",
+        "4 color variants",
+        "Build vertical barriers"
+      ]
+    },
+    {
+      id: "spike-collection",
+      name: "Spike Collection",
+      price: 2,
+      image: "/objects/spike-collection.png",
+      description: "Set of 5 spike trap variations",
+      items: "5 spike pieces (traps and tiles)",
+      features: [
+        "PNG with transparency",
+        "Perfect for hazards",
+        "Tileable spike sections",
+        "Multiple trap sizes"
+      ]
+    },
+    {
+      id: "props-pack",
+      name: "Props Pack",
+      price: 2,
+      image: "/objects/props-pack.png",
+      description: "Essential game props pack",
+      items: "4 props (artifact, boulder, crate, health orb)",
+      features: [
+        "PNG with transparency",
+        "Collectibles and obstacles",
+        "Health pickup included",
+        "Storage and decoration"
+      ]
+    }
+  ]
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-cyan-950 to-gray-900 text-white">
