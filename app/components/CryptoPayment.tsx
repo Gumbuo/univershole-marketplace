@@ -233,8 +233,24 @@ export function CryptoPayment({ amount, characterName, productId, onSuccess, onE
       setTimeout(() => {
         onSuccess();
       }, 1000);
-    } catch (err) {
+    } catch (err: any) {
       console.error("Transaction error:", err);
+      
+      // Better error messages
+      let errorMessage = "Payment failed. ";
+      if (err.code === 4001) {
+        errorMessage += "You rejected the transaction.";
+      } else if (err.code === -32603) {
+        errorMessage += "Insufficient funds for gas + payment.";
+      } else if (err.message?.includes("insufficient funds")) {
+        errorMessage += "Insufficient funds. You need ETH for gas fees too.";
+      } else if (err.message?.includes("user rejected")) {
+        errorMessage += "Transaction was rejected.";
+      } else {
+        errorMessage += err.message || "Please check console for details.";
+      }
+      
+      alert(errorMessage);
       onError(err);
       setIsPaying(false);
     }
