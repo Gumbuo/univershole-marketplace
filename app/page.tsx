@@ -331,6 +331,107 @@ export default function Marketplace() {
         </div>
       </section>
 
+      {/* Objects Section */}
+      <section className="py-16 bg-black/20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-4 text-cyan-400">
+            Game Objects
+          </h2>
+          <p className="text-center text-gray-400 mb-12">Weapons, items, and props for your game</p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            {/* Placeholder Objects */}
+            {[
+              { name: "Pixel Pistol", description: "Animated handgun with firing effects" },
+              { name: "Energy Rifle", description: "Sci-fi laser rifle with muzzle flash" },
+              { name: "Shotgun", description: "Close-range scatter weapon" },
+              { name: "Treasure Chest", description: "Animated opening chest with loot" },
+              { name: "Health Potion", description: "Healing item with glow effect" },
+              { name: "Magic Staff", description: "Wizard staff with particle effects" }
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="bg-black/40 border border-cyan-500/30 rounded-xl p-6 relative overflow-hidden"
+              >
+                {/* Coming Soon Badge */}
+                <div className="absolute top-4 right-4 bg-green-500/20 border border-green-500 rounded-full px-3 py-1 text-xs font-bold text-green-400">
+                  Coming Soon
+                </div>
+
+                <div className="aspect-square bg-gray-800 rounded-lg mb-4 flex items-center justify-center">
+                  <div className="text-6xl opacity-30">🎮</div>
+                </div>
+
+                <h3 className="text-xl font-bold mb-2">{item.name}</h3>
+                <p className="text-3xl font-bold text-gray-500 mb-3 line-through">
+                  $5.00
+                </p>
+
+                <p className="text-gray-500 text-sm mb-4">{item.description}</p>
+
+                <button
+                  disabled
+                  className="w-full py-3 bg-gray-700 cursor-not-allowed rounded-lg font-bold opacity-50"
+                >
+                  Coming Soon
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Maps Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-4 text-cyan-400">
+            Tileset Maps
+          </h2>
+          <p className="text-center text-gray-400 mb-12">Complete tilesets for building game worlds</p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {/* Placeholder Maps */}
+            {[
+              { name: "Dungeon Tileset", description: "Dark stone dungeon with walls, floors, and decorations", size: "16x16 tiles" },
+              { name: "Forest Tileset", description: "Natural forest terrain with trees, grass, and paths", size: "16x16 tiles" },
+              { name: "Sci-Fi Spaceship", description: "Futuristic interior with metal panels and tech", size: "32x32 tiles" },
+              { name: "Desert Wasteland", description: "Sand dunes, rocks, and arid terrain", size: "16x16 tiles" },
+              { name: "Ice Cave", description: "Frozen cavern with ice walls and crystals", size: "16x16 tiles" },
+              { name: "City Streets", description: "Urban environment with roads and buildings", size: "32x32 tiles" }
+            ].map((map, idx) => (
+              <div
+                key={idx}
+                className="bg-black/40 border border-cyan-500/30 rounded-xl p-6 relative overflow-hidden"
+              >
+                {/* Coming Soon Badge */}
+                <div className="absolute top-4 right-4 bg-green-500/20 border border-green-500 rounded-full px-3 py-1 text-xs font-bold text-green-400">
+                  Coming Soon
+                </div>
+
+                <div className="aspect-video bg-gray-800 rounded-lg mb-4 flex items-center justify-center">
+                  <div className="text-6xl opacity-30">🗺️</div>
+                </div>
+
+                <h3 className="text-xl font-bold mb-2">{map.name}</h3>
+                <p className="text-3xl font-bold text-gray-500 mb-3 line-through">
+                  $10.00
+                </p>
+
+                <p className="text-gray-500 text-sm mb-2">{map.description}</p>
+                <p className="text-xs text-gray-600 mb-4">Tile size: {map.size}</p>
+
+                <button
+                  disabled
+                  className="w-full py-3 bg-gray-700 cursor-not-allowed rounded-lg font-bold opacity-50"
+                >
+                  Coming Soon
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Payment Modal */}
       {selectedProduct && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
