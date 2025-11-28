@@ -5,10 +5,10 @@ import { Providers } from "./providers";
 export const metadata: Metadata = {
   metadataBase: new URL('https://univershole.xyz'),
   title: "FoxHole's Pixel Characters and Maps Marketplace",
-  description: "Buy premium pixel art game characters and maps with crypto or PayPal - $5 each with commercial license",
+  description: "Premium pixel art: Characters $3, Objects $2, Tilesets $8 - Pay with crypto or PayPal, commercial license included",
   openGraph: {
     title: "FoxHole's Pixel Characters and Maps Marketplace",
-    description: "Buy premium pixel art game characters and maps with crypto or PayPal - $5 each with commercial license",
+    description: "Premium pixel art: Characters $3, Objects $2, Tilesets $8 - Pay with crypto or PayPal, commercial license included",
     url: "https://univershole.xyz",
     siteName: "FoxHole's Pixel Marketplace",
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "FoxHole's Pixel Characters and Maps Marketplace",
-    description: "Buy premium pixel art game characters and maps with crypto or PayPal - $5 each with commercial license",
+    description: "Premium pixel art: Characters $3, Objects $2, Tilesets $8 - Pay with crypto or PayPal, commercial license included",
     images: ["/banner.jpg"],
   },
 };
