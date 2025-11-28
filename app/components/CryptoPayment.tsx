@@ -6,6 +6,7 @@ import { ethers, BrowserProvider } from "ethers";
 interface CryptoPaymentProps {
   amount: number;
   characterName: string;
+  productId: string;
   onSuccess: () => void;
   onError: (error: any) => void;
 }
@@ -25,7 +26,7 @@ declare global {
   }
 }
 
-export function CryptoPayment({ amount, characterName, onSuccess, onError }: CryptoPaymentProps) {
+export function CryptoPayment({ amount, characterName, productId, onSuccess, onError }: CryptoPaymentProps) {
   const [walletAddress, setWalletAddress] = useState<string>("");
   const [isPaying, setIsPaying] = useState(false);
   const [txHash, setTxHash] = useState<string>("");
@@ -67,6 +68,21 @@ export function CryptoPayment({ amount, characterName, onSuccess, onError }: Cry
 
       setTxHash(tx.hash);
       await tx.wait();
+
+      // Record purchase in database
+      try {
+        await fetch('/api/purchase', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            wallet: walletAddress,
+            productId: productId,
+            txHash: tx.hash,
+          }),
+        });
+      } catch (err) {
+        console.error('Failed to record purchase:', err);
+      }
 
       setTimeout(() => {
         onSuccess();

@@ -7,6 +7,7 @@ import { AnimatedCharacter } from "./components/AnimatedCharacter";
 
 export default function Marketplace() {
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
+  const [downloadLink, setDownloadLink] = useState<string>("");
   const [selectedPrice, setSelectedPrice] = useState<number>(0);
   const [selectedName, setSelectedName] = useState<string>("");
   const [paymentMethod, setPaymentMethod] = useState<"paypal" | "crypto" | null>(null);
@@ -443,10 +444,21 @@ export default function Marketplace() {
                 <p className="text-gray-400">
                   Thank you for your purchase of {selectedName}
                 </p>
-                <div className="bg-gray-800 p-6 rounded-lg">
-                  <p className="text-sm text-gray-400 mb-2">Your download will begin shortly.</p>
+                <div className="bg-gray-800 p-6 rounded-lg space-y-4">
+                  <p className="text-sm text-gray-400 mb-2">Your purchase is complete!</p>
+
+                  {downloadLink && (
+                    <a
+                      href={downloadLink}
+                      download
+                      className="block w-full py-3 bg-gradient-to-r from-cyan-600 to-green-600 hover:from-cyan-700 hover:to-green-700 rounded-lg font-bold text-center transition-all"
+                    >
+                      Download {selectedName}
+                    </a>
+                  )}
+
                   <p className="text-xs text-gray-500">
-                    Check your email for the download link and commercial license.
+                    You can re-download this file anytime by connecting the same wallet and visiting this page.
                   </p>
                 </div>
                 <button
@@ -516,7 +528,19 @@ export default function Marketplace() {
                       <CryptoPayment
                         amount={selectedPrice}
                         characterName={selectedName}
-                        onSuccess={() => setPaymentSuccess(true)}
+                        productId={selectedProduct || ""}
+                        onSuccess={() => {
+                          setPaymentSuccess(true);
+                          // Store wallet address for download link
+                          if (typeof window !== "undefined" && window.ethereum) {
+                            window.ethereum.request({ method: 'eth_accounts' })
+                              .then((accounts: string[]) => {
+                                if (accounts[0]) {
+                                  setDownloadLink(`/api/download?wallet=${accounts[0]}&productId=${selectedProduct}`);
+                                }
+                              });
+                          }
+                        }}
                         onError={(error) => {
                           console.error("Payment error:", error);
                           alert("Payment failed. Please try again.");
