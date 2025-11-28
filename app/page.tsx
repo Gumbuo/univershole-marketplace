@@ -106,7 +106,7 @@ export default function Marketplace() {
     {
       id: "orange-ghost-specter",
       name: "Orange Ghost Specter",
-      price: 5.00,
+      price: 3.00,
       image: "/characters/orange-ghost-specter.png",
       description: "Fiery orange ghost with full combat animation set",
       animations: "112 total animations (14 types × 8 directions)",
@@ -120,7 +120,7 @@ export default function Marketplace() {
     {
       id: "red-ghost-specter",
       name: "Red Ghost Specter",
-      price: 5.00,
+      price: 3.00,
       image: "/characters/red-ghost-specter.png",
       description: "Aggressive red ghost with complete animation pack",
       animations: "112 total animations (14 types × 8 directions)",
@@ -134,7 +134,7 @@ export default function Marketplace() {
     {
       id: "green-ghost-specter",
       name: "Green Ghost Specter",
-      price: 5.00,
+      price: 3.00,
       image: "/characters/green-ghost-specter.png",
       description: "Toxic green ghost with full combat animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -148,7 +148,7 @@ export default function Marketplace() {
     {
       id: "blue-ghost-specter",
       name: "Blue Ghost Specter",
-      price: 5.00,
+      price: 3.00,
       image: "/characters/blue-ghost-specter.png",
       description: "Icy blue ghost with complete animation set",
       animations: "112 total animations (14 types × 8 directions)",
@@ -162,7 +162,7 @@ export default function Marketplace() {
     {
       id: "fire-elemental",
       name: "Fire Elemental",
-      price: 5.00,
+      price: 3.00,
       image: "/characters/fire-elemental.png",
       description: "Blazing fire elemental with explosive animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -176,7 +176,7 @@ export default function Marketplace() {
     {
       id: "steam-elemental",
       name: "Steam Elemental",
-      price: 5.00,
+      price: 3.00,
       image: "/characters/steam-elemental.png",
       description: "Mystical steam elemental with flowing animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -190,7 +190,7 @@ export default function Marketplace() {
     {
       id: "frost-elemental",
       name: "Frost Elemental",
-      price: 5.00,
+      price: 3.00,
       image: "/characters/frost-elemental.png",
       description: "Frozen frost elemental with icy animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -204,7 +204,7 @@ export default function Marketplace() {
     {
       id: "blood-elemental",
       name: "Blood Elemental",
-      price: 5.00,
+      price: 3.00,
       image: "/characters/blood-elemental.png",
       description: "Dark blood elemental with menacing animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -218,7 +218,7 @@ export default function Marketplace() {
     {
       id: "acid-elemental",
       name: "Acid Elemental",
-      price: 5.00,
+      price: 3.00,
       image: "/characters/acid-elemental.png",
       description: "Corrosive acid elemental with toxic animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -232,7 +232,7 @@ export default function Marketplace() {
     {
       id: "ice-golem",
       name: "Ice Golem",
-      price: 5.00,
+      price: 3.00,
       image: "/characters/ice-golem.png",
       description: "Massive ice golem with powerful animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -246,7 +246,7 @@ export default function Marketplace() {
     {
       id: "shadow-being",
       name: "Shadow Being",
-      price: 5.00,
+      price: 3.00,
       image: "/characters/shadow-being.png",
       description: "Mysterious shadow entity with dark animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -260,7 +260,7 @@ export default function Marketplace() {
     {
       id: "ghost-specter",
       name: "Ghost Specter",
-      price: 5.00,
+      price: 3.00,
       image: "/characters/ghost-specter.png",
       description: "Classic ghost specter with full combat set",
       animations: "112 total animations (14 types × 8 directions)",
@@ -274,7 +274,7 @@ export default function Marketplace() {
     {
       id: "skeleton-warrior",
       name: "Skeleton Warrior",
-      price: 5.00,
+      price: 3.00,
       image: "/characters/skeleton-warrior.png",
       description: "Undead skeleton warrior with melee combat",
       animations: "112 total animations (14 types × 8 directions)",
@@ -288,7 +288,7 @@ export default function Marketplace() {
     {
       id: "combat-robot",
       name: "Combat Robot",
-      price: 5.00,
+      price: 3.00,
       image: "/characters/combat-robot.png",
       description: "Advanced combat robot with tech animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -302,7 +302,7 @@ export default function Marketplace() {
     {
       id: "alien-overlord-boss",
       name: "Alien Overlord Boss",
-      price: 5.00,
+      price: 3.00,
       image: "/characters/alien-overlord-boss.png",
       description: "Ultimate alien boss with premium animations",
       animations: "Unique boss-tier animation set",
