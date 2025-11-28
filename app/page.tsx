@@ -425,11 +425,312 @@ export default function Marketplace() {
         "Health pickup included",
         "Storage and decoration"
       ]
+    },
+    {
+      id: 'grass-concrete-sidewalk',
+      name: 'Grass to Concrete Sidewalk',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/grass-concrete-sidewalk.png',
+      tilesetTiles: '16 tiles',
+      features: [
+        'Complete 16 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'grass-highway',
+      name: 'Grass to Highway',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/grass-highway.png',
+      tilesetTiles: '16 tiles',
+      features: [
+        'Complete 16 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'dirt-cobblestone',
+      name: 'Dirt to Cobblestone Path',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/dirt-cobblestone.png',
+      tilesetTiles: '16 tiles',
+      features: [
+        'Complete 16 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'grass-racing-track',
+      name: 'Grass to Racing Track',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/grass-racing-track.png',
+      tilesetTiles: '16 tiles',
+      features: [
+        'Complete 16 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'grass-dirt-road',
+      name: 'Grass to Dirt Road',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/grass-dirt-road.png',
+      tilesetTiles: '16 tiles',
+      features: [
+        'Complete 16 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'concrete-asphalt-road',
+      name: 'Concrete to Asphalt Road',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/concrete-asphalt-road.png',
+      tilesetTiles: '16 tiles',
+      features: [
+        'Complete 16 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'cave-floor-wall',
+      name: 'Cave Floor to Wall',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/cave-floor-wall.png',
+      tilesetTiles: '23 tiles',
+      features: [
+        'Complete 23 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'grass-wooden-fence',
+      name: 'Grass to Wooden Fence',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/grass-wooden-fence.png',
+      tilesetTiles: '23 tiles',
+      features: [
+        'Complete 23 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'cobblestone-brick-wall',
+      name: 'Cobblestone to Brick Wall',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/cobblestone-brick-wall.png',
+      tilesetTiles: '16 tiles',
+      features: [
+        'Complete 16 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'metal-floor-barrier',
+      name: 'Metal Floor to Barrier',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/metal-floor-barrier.png',
+      tilesetTiles: '16 tiles',
+      features: [
+        'Complete 16 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'stone-dungeon-wall',
+      name: 'Stone to Dungeon Wall',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/stone-dungeon-wall.png',
+      tilesetTiles: '23 tiles',
+      features: [
+        'Complete 23 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'ocean-shallow-water',
+      name: 'Ocean to Shallow Water',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/ocean-shallow-water.png',
+      tilesetTiles: '16 tiles',
+      features: [
+        'Complete 16 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'spaceship-alien-metal',
+      name: 'Spaceship to Alien Metal',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/spaceship-alien-metal.png',
+      tilesetTiles: '16 tiles',
+      features: [
+        'Complete 16 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'metal-tech-blocks',
+      name: 'Metal to Tech Blocks',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/metal-tech-blocks.png',
+      tilesetTiles: '16 tiles',
+      features: [
+        'Complete 16 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'ruins-alien-tech',
+      name: 'Ruins to Alien Tech',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/ruins-alien-tech.png',
+      tilesetTiles: '16 tiles',
+      features: [
+        'Complete 16 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'metal-alien-tech',
+      name: 'Metal to Alien Tech',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/metal-alien-tech.png',
+      tilesetTiles: '16 tiles',
+      features: [
+        'Complete 16 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'ice-walls-blocks',
+      name: 'Ice Walls to Blocks',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/ice-walls-blocks.png',
+      tilesetTiles: '23 tiles',
+      features: [
+        'Complete 23 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'volcanic-lava',
+      name: 'Volcanic Rock to Lava',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/volcanic-lava.png',
+      tilesetTiles: '16 tiles',
+      features: [
+        'Complete 16 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'stone-sandstone-ruins',
+      name: 'Stone to Sandstone Ruins',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/stone-sandstone-ruins.png',
+      tilesetTiles: '16 tiles',
+      features: [
+        'Complete 16 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'metal-tech-corridor',
+      name: 'Metal to Tech Corridor',
+      price: 8.00,
+      description: 'Wang tileset for seamless terrain autotiling',
+      image: '/tilesets/metal-tech-corridor.png',
+      tilesetTiles: '16 tiles',
+      features: [
+        'Complete 16 tiles Wang tileset',
+        'Seamless autotiling support',
+        'Includes metadata JSON',
+        'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
     }
   ]
-  // Separate characters and objects
+  // Separate characters, objects, and tilesets
   const characters = products.filter(p => p.animations);
   const objects = products.filter(p => p.items);
+  const tilesets = products.filter(p => p.tilesetTiles);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-cyan-950 to-gray-900 text-white">
@@ -580,50 +881,68 @@ export default function Marketplace() {
       </section>
 
       {/* Maps Section */}
-      <section className="py-16">
+      <section id="tilesets" className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4 text-cyan-400">
+          <h2 className="text-3xl font-bold text-center mb-4 text-purple-400">
             Tileset Maps
           </h2>
           <p className="text-center text-gray-400 mb-12">Complete tilesets for building game worlds</p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {/* Placeholder Maps */}
-            {[
-              { name: "Dungeon Tileset", description: "Dark stone dungeon with walls, floors, and decorations", size: "16x16 tiles" },
-              { name: "Forest Tileset", description: "Natural forest terrain with trees, grass, and paths", size: "16x16 tiles" },
-              { name: "Sci-Fi Spaceship", description: "Futuristic interior with metal panels and tech", size: "32x32 tiles" },
-              { name: "Desert Wasteland", description: "Sand dunes, rocks, and arid terrain", size: "16x16 tiles" },
-              { name: "Ice Cave", description: "Frozen cavern with ice walls and crystals", size: "16x16 tiles" },
-              { name: "City Streets", description: "Urban environment with roads and buildings", size: "32x32 tiles" }
-            ].map((map, idx) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {tilesets.map((product) => (
               <div
-                key={idx}
-                className="bg-black/40 border border-cyan-500/30 rounded-xl p-6 relative overflow-hidden"
+                key={product.id}
+                className="bg-black/40 border border-purple-500/30 rounded-xl p-6 hover:border-purple-500 transition-all hover:scale-105"
               >
-                {/* Coming Soon Badge */}
-                <div className="absolute top-4 right-4 bg-green-500/20 border border-green-500 rounded-full px-3 py-1 text-xs font-bold text-green-400">
-                  Coming Soon
+                <div className="aspect-square bg-gray-800 rounded-lg mb-4 flex items-center justify-center p-4">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="max-w-full max-h-full object-contain pixel-art"
+                  />
                 </div>
 
-                <div className="aspect-video bg-gray-800 rounded-lg mb-4 flex items-center justify-center">
-                  <div className="text-6xl opacity-30">🗺️</div>
-                </div>
-
-                <h3 className="text-xl font-bold mb-2">{map.name}</h3>
-                <p className="text-3xl font-bold text-gray-500 mb-3 line-through">
-                  $10.00
+                <h3 className="text-xl font-bold mb-2">{product.name}</h3>
+                <p className="text-3xl font-bold text-purple-400 mb-3">
+                  ${product.price.toFixed(2)}
                 </p>
 
-                <p className="text-gray-500 text-sm mb-2">{map.description}</p>
-                <p className="text-xs text-gray-600 mb-4">Tile size: {map.size}</p>
+                <p className="text-gray-400 text-sm mb-4">{product.description}</p>
 
-                <button
-                  disabled
-                  className="w-full py-3 bg-gray-700 cursor-not-allowed rounded-lg font-bold opacity-50"
-                >
-                  Coming Soon
-                </button>
+                <div className="mb-4 text-xs text-gray-500">
+                  {product.tilesetTiles}
+                </div>
+
+                <ul className="space-y-1 mb-6 text-sm">
+                  {product.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className="text-purple-400 mt-0.5">✓</span>
+                      <span className="text-gray-300">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {purchasedProducts.has(product.id) ? (
+                  <button
+                    onClick={() => handleDownload(product.id)}
+                    className="w-full py-3 bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 rounded-lg font-bold transition-all"
+                  >
+                    Download
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => {
+                      setSelectedProduct(product.id);
+                      setSelectedPrice(product.price);
+                      setSelectedName(product.name);
+                      setPaymentMethod(null);
+                      setPaymentSuccess(false);
+                    }}
+                    className="w-full py-3 bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 rounded-lg font-bold transition-all"
+                  >
+                    Buy Now
+                  </button>
+                )}
               </div>
             ))}
           </div>
