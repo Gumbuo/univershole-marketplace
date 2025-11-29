@@ -313,8 +313,22 @@ export default function Marketplace() {
         "Phase-change animations",
         "Premium quality assets"
       ]
-    }
-  ,
+    },
+    {
+      id: "spider-tank-vehicle",
+      name: "Tank Vehicle",
+      price: 5.00,
+      image: "/characters/spider-tank-vehicle.png",
+      description: "Four-legged mechanical tank with cannon turret",
+      vehicleSprites: "8 directional static sprites (64×64px)",
+      vehicle: true,
+      features: [
+        "Full 8-direction coverage",
+        "High detail pixel art",
+        "Tank hull with cannon turret",
+        "Perfect for top-down games"
+      ]
+    },
     {
       id: "crystal-collection",
       name: "Crystal Collection",
@@ -732,6 +746,7 @@ export default function Marketplace() {
   const characters = products.filter(p => p.animations);
   const objects = products.filter(p => p.items);
   const tilesets = products.filter(p => p.tilesetTiles);
+  const vehicles = products.filter(p => p.vehicle);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-cyan-950 to-gray-900 text-white">
@@ -809,6 +824,75 @@ export default function Marketplace() {
                     </li>
                   ))}
 </ul>                {purchasedProducts.has(product.id) ? (                  <button                    onClick={() => handleDownload(product.id)}                    className="w-full py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 rounded-lg font-bold transition-all"                  >                    Download                  </button>                ) : (                  <button                    onClick={() => {                      setSelectedProduct(product.id);                      setSelectedPrice(product.price);                      setSelectedName(product.name);                      setPaymentMethod(null);                      setPaymentSuccess(false);                    }}                    className="w-full py-3 bg-gradient-to-r from-cyan-600 to-green-600 hover:from-cyan-700 hover:to-green-700 rounded-lg font-bold transition-all"                  >                    Buy Now                  </button>                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Vehicles Section */}
+      <section className="py-16 bg-gradient-to-b from-orange-950/30 to-black/20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-4 text-orange-400">
+            Vehicles
+          </h2>
+          <p className="text-center text-gray-400 mb-12">Drivable tanks and mechs for your game</p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            {vehicles.map((product) => (
+              <div
+                key={product.id}
+                className="bg-black/40 border border-orange-500/30 rounded-xl p-6 hover:border-orange-500 transition-all hover:scale-105"
+              >
+                <div className="aspect-square bg-gray-800 rounded-lg mb-4 flex items-center justify-center p-8">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="max-w-full max-h-full object-contain pixel-art"
+                  />
+                </div>
+
+                <h3 className="text-xl font-bold mb-2">{product.name}</h3>
+                <p className="text-3xl font-bold text-orange-400 mb-3">
+                  ${product.price.toFixed(2)}
+                </p>
+
+                <p className="text-gray-400 text-sm mb-4">{product.description}</p>
+
+                <div className="mb-4 text-xs text-gray-500">
+                  {product.vehicleSprites}
+                </div>
+
+                <ul className="space-y-1 mb-6 text-sm">
+                  {product.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className="text-orange-400 mt-0.5">✓</span>
+                      <span className="text-gray-300">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {purchasedProducts.has(product.id) ? (
+                  <button
+                    onClick={() => handleDownload(product.id)}
+                    className="w-full py-3 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 rounded-lg font-bold transition-all"
+                  >
+                    Download
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => {
+                      setSelectedProduct(product.id);
+                      setSelectedPrice(product.price);
+                      setSelectedName(product.name);
+                      setPaymentMethod(null);
+                      setPaymentSuccess(false);
+                    }}
+                    className="w-full py-3 bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 rounded-lg font-bold transition-all"
+                  >
+                    Buy Now
+                  </button>
+                )}
               </div>
             ))}
           </div>
