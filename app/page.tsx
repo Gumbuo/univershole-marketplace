@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { PayPalPayment } from "./components/PayPalPayment";
 import { CryptoPayment } from "./components/CryptoPayment";
 import { SolanaPayment } from "./components/SolanaPayment";
 import { BitcoinPayment } from "./components/BitcoinPayment";
@@ -770,7 +769,7 @@ export default function Marketplace() {
               Premium Pixel Art Game Characters
             </p>
             <p className="text-lg text-gray-400 mb-8">
-              Pay with crypto or PayPal • Instant download • Commercial license included
+              Pay with crypto • Instant download • Commercial license included
             </p>
             <div className="flex justify-center gap-4 text-sm text-gray-400">
               <span>✓ 8-Direction Sprites</span>
@@ -1085,17 +1084,6 @@ export default function Marketplace() {
                 {!paymentMethod ? (
                   <div className="space-y-4">
                     <button
-                      disabled
-                      className="w-full py-4 bg-gray-600 cursor-not-allowed rounded-lg font-bold transition-all flex items-center justify-center gap-2 opacity-50"
-                    >
-                      <span>💳</span>
-                      <div className="flex flex-col items-center">
-                        <span>Pay with PayPal</span>
-                        <span className="text-xs text-gray-400">Coming Soon</span>
-                      </div>
-                    </button>
-
-                    <button
                       onClick={() => setPaymentMethod("crypto")}
                       className="w-full py-4 bg-gradient-to-r from-cyan-600 to-green-600 hover:from-cyan-700 hover:to-green-700 rounded-lg font-bold transition-all flex items-center justify-center gap-2"
                     >
@@ -1137,17 +1125,7 @@ export default function Marketplace() {
                   </div>
                 ) : (
                   <div className="space-y-4">
-                    {paymentMethod === "paypal" ? (
-                      <PayPalPayment
-                        amount={selectedPrice}
-                        characterName={selectedName}
-                        onSuccess={() => setPaymentSuccess(true)}
-                        onError={(error) => {
-                          console.error("Payment error:", error);
-                          alert("Payment failed. Please try again.");
-                        }}
-                      />
-                    ) : paymentMethod === "crypto" ? (
+                    {paymentMethod === "crypto" ? (
                       <CryptoPayment
                         amount={selectedPrice}
                         characterName={selectedName}
@@ -1218,7 +1196,7 @@ export default function Marketplace() {
       <footer className="bg-black/50 border-t border-cyan-800 py-8 mt-16">
         <div className="container mx-auto px-4 text-center text-gray-500">
           <p>© 2024 Foy Pixel Characters and Maps Marketplace. All characters include commercial license.</p>
-          <p className="mt-2 text-sm">Instant download • Crypto & PayPal accepted</p>
+          <p className="mt-2 text-sm">Instant download • Crypto payments only</p>
         </div>
       </footer>
     </div>
