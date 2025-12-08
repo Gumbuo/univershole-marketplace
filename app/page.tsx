@@ -764,7 +764,7 @@ export default function Marketplace() {
         <div className="container mx-auto px-4 py-16 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              FoxHole's Pixel Characters and Maps Marketplace
+              Foy Pixel Characters and Maps Marketplace
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-4">
               Premium Pixel Art Game Characters
@@ -1217,7 +1217,7 @@ export default function Marketplace() {
       {/* Footer */}
       <footer className="bg-black/50 border-t border-cyan-800 py-8 mt-16">
         <div className="container mx-auto px-4 text-center text-gray-500">
-          <p>© 2024 FoxHole's Pixel Characters and Maps Marketplace. All characters include commercial license.</p>
+          <p>© 2024 Foy Pixel Characters and Maps Marketplace. All characters include commercial license.</p>
           <p className="mt-2 text-sm">Instant download • Crypto & PayPal accepted</p>
         </div>
       </footer>
