@@ -749,6 +749,14 @@ export default function Marketplace() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-cyan-950 to-gray-900 text-white">
 
+      {/* Top nav */}
+      <div className="sticky top-0 z-50 bg-gray-900/95 border-b border-cyan-500/30 backdrop-blur px-6 py-3 flex items-center justify-between">
+        <a href="https://gamehole.games" className="text-cyan-400 font-bold text-sm hover:text-cyan-300 transition-colors" style={{ fontFamily: "Orbitron, sans-serif" }}>
+          ← GAMEHOLE.GAMES
+        </a>
+        <span className="text-cyan-400/60 text-xs tracking-widest uppercase" style={{ fontFamily: "Orbitron, sans-serif" }}>Pixel Marketplace</span>
+      </div>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden border-b border-cyan-500/30">
         {/* Banner Image */}
