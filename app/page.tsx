@@ -440,6 +440,258 @@ export default function Marketplace() {
       ]
     },
     {
+      id: "foxstead-bushes",
+      name: "Foxstead Bushes",
+      price: 2,
+      image: "/objects/foxstead-bushes.png",
+      description: "3 farm-style bush variants in a single sprite sheet",
+      items: "3 bush sizes (small, medium, large)",
+      features: [
+        "PNG with transparency",
+        "Perfect for farm and garden scenes",
+        "Multiple size variants",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-decor-plants",
+      name: "Foxstead Decorative Plants",
+      price: 2,
+      image: "/objects/foxstead-decor-plants.png",
+      description: "8 small decorative plant and grass tuft variants",
+      items: "8 plant/grass variants",
+      features: [
+        "PNG with transparency",
+        "Great for ground clutter and decoration",
+        "Multiple variants",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-fence",
+      name: "Foxstead Fence Set",
+      price: 2,
+      image: "/objects/foxstead-fence.png",
+      description: "Wooden fence piece set for building farm enclosures",
+      items: "Posts, straight sections, corners, and gate pieces",
+      features: [
+        "PNG with transparency",
+        "Build enclosures and paddocks",
+        "Modular fence pieces",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-flowers",
+      name: "Foxstead Flowers",
+      price: 2,
+      image: "/objects/foxstead-flowers.png",
+      description: "13 flower and small plant variants in a single sprite sheet",
+      items: "13 flower/plant variants",
+      features: [
+        "PNG with transparency",
+        "Perfect for farm and garden decoration",
+        "Multiple color variants",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-mushrooms",
+      name: "Foxstead Mushrooms",
+      price: 2,
+      image: "/objects/foxstead-mushrooms.png",
+      description: "6 mushroom variants in a single sprite sheet",
+      items: "6 mushroom variants",
+      features: [
+        "PNG with transparency",
+        "Perfect for forest and farm scenes",
+        "Multiple color variants",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-stones",
+      name: "Foxstead Stones",
+      price: 2,
+      image: "/objects/foxstead-stones.png",
+      description: "8 rock and pebble variants, from boulders to small stones",
+      items: "8 stone/rock variants",
+      features: [
+        "PNG with transparency",
+        "Perfect for mining and terrain decoration",
+        "Multiple size variants",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-tree-oak",
+      name: "Foxstead Oak Tree",
+      price: 2,
+      image: "/objects/foxstead-tree-oak.png",
+      description: "Broad-canopy deciduous tree with growth-stage variants",
+      items: "Sapling, full tree, and stump",
+      features: [
+        "PNG with transparency",
+        "Growth-stage variants included",
+        "Perfect for farm and forest scenes",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-tree-round",
+      name: "Foxstead Round Tree",
+      price: 2,
+      image: "/objects/foxstead-tree-round.png",
+      description: "Full round-canopy tree with growth-stage variants",
+      items: "Sapling, full tree, and stump",
+      features: [
+        "PNG with transparency",
+        "Growth-stage variants included",
+        "Perfect for farm and forest scenes",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-tree-pine",
+      name: "Foxstead Pine Tree",
+      price: 2,
+      image: "/objects/foxstead-tree-pine.png",
+      description: "Conifer/pine tree with growth-stage variants",
+      items: "Sapling, full tree, and stump",
+      features: [
+        "PNG with transparency",
+        "Growth-stage variants included",
+        "Perfect for farm and forest scenes",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-axe-iron",
+      name: "Foxstead Iron Axe",
+      price: 2,
+      image: "/objects/foxstead-axe-iron.png",
+      description: "Iron-tier axe tool icon for chopping trees",
+      items: "1 tool icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and crafting UI",
+        "Iron tier",
+        "Ready to use in farming/RPG games"
+      ]
+    },
+    {
+      id: "foxstead-axe-silver",
+      name: "Foxstead Silver Axe",
+      price: 2,
+      image: "/objects/foxstead-axe-silver.png",
+      description: "Silver-tier axe tool icon for chopping trees",
+      items: "1 tool icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and crafting UI",
+        "Silver tier, upgraded rarity color",
+        "Ready to use in farming/RPG games"
+      ]
+    },
+    {
+      id: "foxstead-axe-gold",
+      name: "Foxstead Gold Axe",
+      price: 2,
+      image: "/objects/foxstead-axe-gold.png",
+      description: "Gold-tier axe tool icon for chopping trees",
+      items: "1 tool icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and crafting UI",
+        "Gold tier, top-rarity color",
+        "Ready to use in farming/RPG games"
+      ]
+    },
+    {
+      id: "foxstead-pickaxe-iron",
+      name: "Foxstead Iron Pickaxe",
+      price: 2,
+      image: "/objects/foxstead-pickaxe-iron.png",
+      description: "Iron-tier pickaxe tool icon for mining rocks and ore",
+      items: "1 tool icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and crafting UI",
+        "Iron tier",
+        "Ready to use in farming/RPG games"
+      ]
+    },
+    {
+      id: "foxstead-pickaxe-silver",
+      name: "Foxstead Silver Pickaxe",
+      price: 2,
+      image: "/objects/foxstead-pickaxe-silver.png",
+      description: "Silver-tier pickaxe tool icon for mining rocks and ore",
+      items: "1 tool icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and crafting UI",
+        "Silver tier, upgraded rarity color",
+        "Ready to use in farming/RPG games"
+      ]
+    },
+    {
+      id: "foxstead-pickaxe-gold",
+      name: "Foxstead Gold Pickaxe",
+      price: 2,
+      image: "/objects/foxstead-pickaxe-gold.png",
+      description: "Gold-tier pickaxe tool icon for mining rocks and ore",
+      items: "1 tool icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and crafting UI",
+        "Gold tier, top-rarity color",
+        "Ready to use in farming/RPG games"
+      ]
+    },
+    {
+      id: "foxstead-rod-iron",
+      name: "Foxstead Iron Fishing Rod",
+      price: 2,
+      image: "/objects/foxstead-rod-iron.png",
+      description: "Iron-tier fishing rod tool icon",
+      items: "1 tool icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and crafting UI",
+        "Iron tier",
+        "Ready to use in farming/RPG games"
+      ]
+    },
+    {
+      id: "foxstead-rod-silver",
+      name: "Foxstead Silver Fishing Rod",
+      price: 2,
+      image: "/objects/foxstead-rod-silver.png",
+      description: "Silver-tier fishing rod tool icon",
+      items: "1 tool icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and crafting UI",
+        "Silver tier, upgraded rarity color",
+        "Ready to use in farming/RPG games"
+      ]
+    },
+    {
+      id: "foxstead-rod-gold",
+      name: "Foxstead Gold Fishing Rod",
+      price: 2,
+      image: "/objects/foxstead-rod-gold.png",
+      description: "Gold-tier fishing rod tool icon",
+      items: "1 tool icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and crafting UI",
+        "Gold tier, top-rarity color",
+        "Ready to use in farming/RPG games"
+      ]
+    },
+    {
       id: 'grass-concrete-sidewalk',
       name: 'Grass to Concrete Sidewalk',
       price: 8.00,
