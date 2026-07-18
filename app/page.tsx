@@ -299,12 +299,28 @@ export default function Marketplace() {
       ]
     },
     {
+      id: "farmer-tom",
+      name: "Farmer Tom",
+      price: 3.00,
+      image: "/characters/farmer-tom.png",
+      description: "Crypto-rich farmer character with gold chains, shades, and a cap",
+      animations: "240 total frames (8 rotations + 4 animation types × 8 directions)",
+      frameCount: 5,
+      features: [
+        "Picking Up, Drinking, Chopping Tree, and Fishing animations",
+        "Full 8-direction coverage",
+        "Farm-life personality style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
       id: "alien-overlord-boss",
       name: "Alien Overlord Boss",
       price: 3.00,
       image: "/characters/alien-overlord-boss.png",
       description: "Ultimate alien boss with premium animations",
       animations: "Unique boss-tier animation set",
+      frameCount: 1,
       features: [
         "Epic boss presence",
         "Devastating attack patterns",
@@ -510,6 +526,21 @@ export default function Marketplace() {
       ]
     },
     {
+      id: "foxstead-beehive",
+      name: "Foxstead Beehive",
+      price: 2,
+      image: "/objects/foxstead-beehive.png",
+      description: "Animated beehive with honey-dripping and bees-flying loop",
+      items: "9-frame animation + 1 static rotation",
+      frameCount: 9,
+      features: [
+        "PNG with transparency",
+        "Looping honey/bee animation",
+        "Perfect for farm decoration",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
       id: "foxstead-forest-trees",
       name: "Foxstead Forest Trees",
       price: 2,
@@ -520,6 +551,1042 @@ export default function Marketplace() {
         "PNG with transparency",
         "Great for forest and world decoration",
         "Multiple variants",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-pumpkin-seeds",
+      name: "Pumpkin Seeds",
+      price: 2,
+      image: "/objects/foxstead-pumpkin-seeds.png",
+      description: "Single pumpkin seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-fern-seeds",
+      name: "Fern Seeds",
+      price: 2,
+      image: "/objects/foxstead-fern-seeds.png",
+      description: "Single fern seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-cotton-seeds",
+      name: "Cotton Seeds",
+      price: 2,
+      image: "/objects/foxstead-cotton-seeds.png",
+      description: "Single cotton seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-carrot-seeds",
+      name: "Carrot Seeds",
+      price: 2,
+      image: "/objects/foxstead-carrot-seeds.png",
+      description: "Single carrot seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-potato-seeds",
+      name: "Potato Seeds",
+      price: 2,
+      image: "/objects/foxstead-potato-seeds.png",
+      description: "Single potato seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-cucumber-seeds",
+      name: "Cucumber Seeds",
+      price: 2,
+      image: "/objects/foxstead-cucumber-seeds.png",
+      description: "Single cucumber seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-tomato-seeds",
+      name: "Tomato Seeds",
+      price: 2,
+      image: "/objects/foxstead-tomato-seeds.png",
+      description: "Single tomato seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-grape-seeds",
+      name: "Grape Seeds",
+      price: 2,
+      image: "/objects/foxstead-grape-seeds.png",
+      description: "Single grape seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-blue-flower-seeds",
+      name: "Blue Flower Seeds",
+      price: 2,
+      image: "/objects/foxstead-blue-flower-seeds.png",
+      description: "Single blue flower seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-yellow-flower-seeds",
+      name: "Yellow Flower Seeds",
+      price: 2,
+      image: "/objects/foxstead-yellow-flower-seeds.png",
+      description: "Single yellow flower seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-red-flower-seeds",
+      name: "Red Flower Seeds",
+      price: 2,
+      image: "/objects/foxstead-red-flower-seeds.png",
+      description: "Single red flower seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-wheat-seeds",
+      name: "Wheat Seeds",
+      price: 2,
+      image: "/objects/foxstead-wheat-seeds.png",
+      description: "Single wheat seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-wood-log",
+      name: "Wood Log",
+      price: 2,
+      image: "/objects/foxstead-wood-log.png",
+      description: "Single wood log item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-wood-plank",
+      name: "Wood Plank",
+      price: 2,
+      image: "/objects/foxstead-wood-plank.png",
+      description: "Single wood plank item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-scarecrow",
+      name: "Scarecrow",
+      price: 2,
+      image: "/objects/foxstead-scarecrow.png",
+      description: "Single scarecrow item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-pumpkin-growth",
+      name: "Pumpkin Growth Stages",
+      price: 2,
+      image: "/objects/foxstead-pumpkin-growth.png",
+      description: "Pumpkin Growth Stages — multiple growth-stage variants",
+      items: "3 variants/stages (halfway_grown_pumpki, mini_icon_for_backpack, seedling_state)",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-red-flower",
+      name: "Red Flower",
+      price: 2,
+      image: "/objects/foxstead-red-flower.png",
+      description: "Red Flower — multiple growth-stage variants",
+      items: "3 variants/stages (halfway_to_harvest, red_flower, seedling_state)",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-blue-flower",
+      name: "Blue Flower",
+      price: 2,
+      image: "/objects/foxstead-blue-flower.png",
+      description: "Blue Flower — multiple growth-stage variants",
+      items: "3 variants/stages (blue_flower, halfway_to_harvest, seedling_state)",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-wheat-plant",
+      name: "Wheat Plant (Ready to Harvest)",
+      price: 2,
+      image: "/objects/foxstead-wheat-plant.png",
+      description: "Wheat Plant (Ready to Harvest) — multiple growth-stage variants",
+      items: "3 variants/stages (halfway_to_harvest, seedling_stage, wheet_plant_ready_for_harvest)",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-carrot-plant",
+      name: "Carrot Plant",
+      price: 2,
+      image: "/objects/foxstead-carrot-plant.png",
+      description: "Carrot Plant — multiple growth-stage variants",
+      items: "3 variants/stages (carrot_plant, halfway_to_harvest_s, seedling_stage)",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-potato-plant",
+      name: "Potato Plant",
+      price: 2,
+      image: "/objects/foxstead-potato-plant.png",
+      description: "Potato Plant — multiple growth-stage variants",
+      items: "3 variants/stages (halfway_to_harvest_s, potato_plant, seedling_stage)",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-cucumber-plant",
+      name: "Cucumber Plant",
+      price: 2,
+      image: "/objects/foxstead-cucumber-plant.png",
+      description: "Cucumber Plant — multiple growth-stage variants",
+      items: "3 variants/stages (cucumber_plant, halfway_to_harvest_s, seedling_stage)",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-cotton-plant",
+      name: "Cotton Plant",
+      price: 2,
+      image: "/objects/foxstead-cotton-plant.png",
+      description: "Single cotton plant item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-tomato-plant",
+      name: "Tomato Plant",
+      price: 2,
+      image: "/objects/foxstead-tomato-plant.png",
+      description: "Tomato Plant — multiple growth-stage variants",
+      items: "3 variants/stages (halfway_to_harvest_s, seedling_stage, tomato_plant)",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-mushroom-in-soil",
+      name: "Mushroom in Soil",
+      price: 2,
+      image: "/objects/foxstead-mushroom-in-soil.png",
+      description: "Single mushroom in soil item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-fern-plant",
+      name: "Fern Plant in Soil",
+      price: 2,
+      image: "/objects/foxstead-fern-plant.png",
+      description: "Single fern plant in soil item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-grape-plant",
+      name: "Grape Plant in Soil",
+      price: 2,
+      image: "/objects/foxstead-grape-plant.png",
+      description: "Grape Plant in Soil — multiple growth-stage variants",
+      items: "3 variants/stages (grapes_plants_in_soil, halfway_to_harvest_s, seedling_stage)",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-mailbox",
+      name: "Mailbox",
+      price: 2,
+      image: "/objects/foxstead-mailbox.png",
+      description: "Mailbox — multiple growth-stage variants",
+      items: "2 variants/stages (a_mailbox, currently_holding_ma)",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-lemon",
+      name: "Lemon",
+      price: 2,
+      image: "/objects/foxstead-lemon.png",
+      description: "Single lemon item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-peach-fruit",
+      name: "Peach (Fruit)",
+      price: 2,
+      image: "/objects/foxstead-peach-fruit.png",
+      description: "Single peach (fruit) item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-apple-fruit",
+      name: "Apple (Fruit)",
+      price: 2,
+      image: "/objects/foxstead-apple-fruit.png",
+      description: "Single apple (fruit) item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-egg",
+      name: "Small Egg",
+      price: 2,
+      image: "/objects/foxstead-egg.png",
+      description: "Single small egg item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-axe-tiers-icon",
+      name: "Axe Tiers Reference Icon",
+      price: 2,
+      image: "/objects/foxstead-axe-tiers-icon.png",
+      description: "Single axe tiers reference icon item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-chubfish",
+      name: "Chubfish",
+      price: 2,
+      image: "/objects/foxstead-chubfish.png",
+      description: "Single chubfish item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-bluegill-fish",
+      name: "Bluegill Fish",
+      price: 2,
+      image: "/objects/foxstead-bluegill-fish.png",
+      description: "Single bluegill fish item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-bullfrog",
+      name: "Bullfrog",
+      price: 2,
+      image: "/objects/foxstead-bullfrog.png",
+      description: "Single bullfrog item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-chicken-coop",
+      name: "Chicken Coop",
+      price: 2,
+      image: "/objects/foxstead-chicken-coop.png",
+      description: "Single chicken coop item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-brown-chicken",
+      name: "Gold/Brown Chicken",
+      price: 2,
+      image: "/objects/foxstead-brown-chicken.png",
+      description: "Single gold/brown chicken item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-albino-catfish",
+      name: "Albino Catfish",
+      price: 2,
+      image: "/objects/foxstead-albino-catfish.png",
+      description: "Single albino catfish item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-alchemy-table",
+      name: "Alchemy Table",
+      price: 2,
+      image: "/objects/foxstead-alchemy-table.png",
+      description: "Single alchemy table item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-white-chicken",
+      name: "White Chicken",
+      price: 2,
+      image: "/objects/foxstead-white-chicken.png",
+      description: "Single white chicken item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-ore",
+      name: "Gold/Silver/Iron Ore",
+      price: 2,
+      image: "/objects/foxstead-ore.png",
+      description: "Single gold/silver/iron ore item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-ingot",
+      name: "Gold/Silver/Iron Ingot",
+      price: 2,
+      image: "/objects/foxstead-ingot.png",
+      description: "Single gold/silver/iron ingot item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-anvil",
+      name: "Anvil",
+      price: 2,
+      image: "/objects/foxstead-anvil.png",
+      description: "Single anvil item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-wine-barrel",
+      name: "Wine Barrel",
+      price: 2,
+      image: "/objects/foxstead-wine-barrel.png",
+      description: "Single wine barrel item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-black-crappie",
+      name: "Black Crappie",
+      price: 2,
+      image: "/objects/foxstead-black-crappie.png",
+      description: "Single black crappie item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-bread",
+      name: "Bread & Pumpkin Bread",
+      price: 2,
+      image: "/objects/foxstead-bread.png",
+      description: "Single bread & pumpkin bread item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-cakes",
+      name: "Carrot Cake, Grape Tart & Tomato Cake",
+      price: 2,
+      image: "/objects/foxstead-cakes.png",
+      description: "Single carrot cake, grape tart & tomato cake item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-catfish",
+      name: "Catfish",
+      price: 2,
+      image: "/objects/foxstead-catfish.png",
+      description: "Single catfish item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-chicken-feed",
+      name: "Chicken Feed Bag",
+      price: 2,
+      image: "/objects/foxstead-chicken-feed.png",
+      description: "Single chicken feed bag item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-cotton-thread",
+      name: "Cotton Thread (Dyed Colors)",
+      price: 2,
+      image: "/objects/foxstead-cotton-thread.png",
+      description: "Single cotton thread (dyed colors) item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-spinning-wheel",
+      name: "Spinning Wheel & Dyeing Vat",
+      price: 2,
+      image: "/objects/foxstead-spinning-wheel.png",
+      description: "Single spinning wheel & dyeing vat item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-sawmill",
+      name: "Sawmill",
+      price: 2,
+      image: "/objects/foxstead-sawmill.png",
+      description: "Single sawmill item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-stonecutter-station",
+      name: "Stonecutter Station",
+      price: 2,
+      image: "/objects/foxstead-stonecutter-station.png",
+      description: "Single stonecutter station item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-wine-jug",
+      name: "Wine Jug",
+      price: 2,
+      image: "/objects/foxstead-wine-jug.png",
+      description: "Single wine jug item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-paper-recipe",
+      name: "Paper (Recipe Item)",
+      price: 2,
+      image: "/objects/foxstead-paper-recipe.png",
+      description: "Single paper (recipe item) item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-amethyst",
+      name: "Amethyst Gem",
+      price: 2,
+      image: "/objects/foxstead-amethyst.png",
+      description: "Single amethyst gem item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-grape-mash",
+      name: "Grape Mash",
+      price: 2,
+      image: "/objects/foxstead-grape-mash.png",
+      description: "Single grape mash item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-ruby",
+      name: "Ruby Gem",
+      price: 2,
+      image: "/objects/foxstead-ruby.png",
+      description: "Single ruby gem item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-wine-press",
+      name: "Wine Press Table",
+      price: 2,
+      image: "/objects/foxstead-wine-press.png",
+      description: "Single wine press table item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-emerald",
+      name: "Emerald Gem",
+      price: 2,
+      image: "/objects/foxstead-emerald.png",
+      description: "Single emerald gem item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-sapphire",
+      name: "Sapphire Gem",
+      price: 2,
+      image: "/objects/foxstead-sapphire.png",
+      description: "Single sapphire gem item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-clay-brick",
+      name: "Clay & Clay Brick",
+      price: 2,
+      image: "/objects/foxstead-clay-brick.png",
+      description: "Single clay & clay brick item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-potions",
+      name: "Red & Blue Potions",
+      price: 2,
+      image: "/objects/foxstead-potions.png",
+      description: "Single red & blue potions item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-tadpole",
+      name: "Tadpole",
+      price: 2,
+      image: "/objects/foxstead-tadpole.png",
+      description: "Single tadpole item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-grassland-tile-icon",
+      name: "Grassland Tile (Icon)",
+      price: 2,
+      image: "/objects/foxstead-grassland-tile-icon.png",
+      description: "Single grassland tile (icon) item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-pond-tile",
+      name: "Pond Tile",
+      price: 2,
+      image: "/objects/foxstead-pond-tile.png",
+      description: "Single pond tile item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-grassland-tile-detailed",
+      name: "Grassland Tile (Detailed)",
+      price: 2,
+      image: "/objects/foxstead-grassland-tile-detailed.png",
+      description: "Single grassland tile (detailed) item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-mountain-tile",
+      name: "Mountain Tile",
+      price: 2,
+      image: "/objects/foxstead-mountain-tile.png",
+      description: "Single mountain tile item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-forest-tile",
+      name: "Forest Tile",
+      price: 2,
+      image: "/objects/foxstead-forest-tile.png",
+      description: "Single forest tile item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-soil-plot",
+      name: "Soil Plot Tile",
+      price: 2,
+      image: "/objects/foxstead-soil-plot.png",
+      description: "Single soil plot tile item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-home-icon",
+      name: "Home Icon (Fast Travel)",
+      price: 2,
+      image: "/objects/foxstead-home-icon.png",
+      description: "Single home icon (fast travel) item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-notification-bell",
+      name: "Notification Bell Icon",
+      price: 2,
+      image: "/objects/foxstead-notification-bell.png",
+      description: "Single notification bell icon item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-music-icon",
+      name: "Music Player Icon",
+      price: 2,
+      image: "/objects/foxstead-music-icon.png",
+      description: "Single music player icon item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
         "Ready to use in top-down games"
       ]
     },
@@ -1016,6 +2083,7 @@ export default function Marketplace() {
                     characterId={product.id}
                     characterName={product.name}
                     fallbackImage={product.image}
+                    frameCount={product.frameCount ?? 6}
                   />
                 </div>
 
@@ -1128,11 +2196,21 @@ export default function Marketplace() {
                 className="bg-black/40 border border-green-500/30 rounded-xl p-6 hover:border-green-500 transition-all hover:scale-105"
               >
                 <div className="aspect-square bg-gray-800 rounded-lg mb-4 flex items-center justify-center p-8">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="max-w-full max-h-full object-contain pixel-art"
-                  />
+                  {product.frameCount ? (
+                    <AnimatedCharacter
+                      characterId={product.id}
+                      characterName={product.name}
+                      fallbackImage={product.image}
+                      frameCount={product.frameCount}
+                      basePath="/objects"
+                    />
+                  ) : (
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="max-w-full max-h-full object-contain pixel-art"
+                    />
+                  )}
                 </div>
 
                 <h3 className="text-xl font-bold mb-2">{product.name}</h3>

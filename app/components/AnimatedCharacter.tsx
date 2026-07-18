@@ -6,22 +6,30 @@ interface AnimatedCharacterProps {
   characterId: string;
   characterName: string;
   fallbackImage: string;
+  frameCount?: number;
+  basePath?: string;
 }
 
-export function AnimatedCharacter({ characterId, characterName, fallbackImage }: AnimatedCharacterProps) {
+export function AnimatedCharacter({
+  characterId,
+  characterName,
+  fallbackImage,
+  frameCount = 6,
+  basePath = "/characters",
+}: AnimatedCharacterProps) {
   const [currentFrame, setCurrentFrame] = useState(0);
-  const totalFrames = 6; // cross-punch has 6 frames (0-5)
 
   useEffect(() => {
+    if (frameCount < 2) return;
     const interval = setInterval(() => {
-      setCurrentFrame((prev) => (prev + 1) % totalFrames);
+      setCurrentFrame((prev) => (prev + 1) % frameCount);
     }, 150); // Change frame every 150ms for smooth animation
 
     return () => clearInterval(interval);
-  }, []);
+  }, [frameCount]);
 
-  // Alien overlord boss doesn't have cross-punch, use static image
-  if (characterId === "alien-overlord-boss") {
+  // No animation frames prepared — use static image
+  if (frameCount < 2) {
     return (
       <img
         src={fallbackImage}
@@ -32,9 +40,11 @@ export function AnimatedCharacter({ characterId, characterName, fallbackImage }:
     );
   }
 
+  const frameFile = `frame_${String(currentFrame).padStart(3, '0')}.png`;
+
   return (
     <img
-      src={`/characters/${characterId}/frame_00${currentFrame}.png`}
+      src={`${basePath}/${characterId}/${frameFile}`}
       alt={`${characterName} - frame ${currentFrame}`}
       className="w-full h-full object-contain pixelated"
       style={{ imageRendering: 'pixelated' }}
