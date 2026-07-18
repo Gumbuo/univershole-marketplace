@@ -426,6 +426,104 @@ export default function Marketplace() {
       ]
     },
     {
+      id: "foxstead-apple-tree",
+      name: "Foxstead Apple Tree",
+      price: 2,
+      image: "/objects/foxstead-apple-tree.png",
+      description: "Full apple tree resource-node animation set",
+      items: "21 frames (sprout, halfway, full, 9-frame chop, 9-frame stump)",
+      features: [
+        "PNG with transparency",
+        "Growth-stage and chop/stump animations",
+        "Perfect for farming resource nodes",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-peach-tree",
+      name: "Foxstead Peach Tree",
+      price: 2,
+      image: "/objects/foxstead-peach-tree.png",
+      description: "Peach tree growth-stage set",
+      items: "3 frames (sprout, halfway, full)",
+      features: [
+        "PNG with transparency",
+        "Growth-stage variants included",
+        "Perfect for farming resource nodes",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-pear-tree",
+      name: "Foxstead Pear Tree",
+      price: 2,
+      image: "/objects/foxstead-pear-tree.png",
+      description: "Pear tree growth-stage set",
+      items: "3 frames (sprout, halfway, full)",
+      features: [
+        "PNG with transparency",
+        "Growth-stage variants included",
+        "Perfect for farming resource nodes",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-rock",
+      name: "Foxstead Rock",
+      price: 2,
+      image: "/objects/foxstead-rock.png",
+      description: "Complete mineable rock resource-node set",
+      items: "30 frames (full/cracked/dust states, 9-frame break, 9-frame crack, 9-frame rustling)",
+      features: [
+        "PNG with transparency",
+        "Break, crack, and idle animations",
+        "Perfect for mining resource nodes",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-stone",
+      name: "Foxstead Stone",
+      price: 2,
+      image: "/objects/foxstead-stone.png",
+      description: "Single stone material icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and crafting UI",
+        "Matches Foxstead tool icon style",
+        "Ready to use in farming/RPG games"
+      ]
+    },
+    {
+      id: "foxstead-mushroom",
+      name: "Foxstead Mushroom",
+      price: 2,
+      image: "/objects/foxstead-mushroom.png",
+      description: "Single mushroom item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and crafting UI",
+        "Matches Foxstead tool icon style",
+        "Ready to use in farming/RPG games"
+      ]
+    },
+    {
+      id: "foxstead-forest-trees",
+      name: "Foxstead Forest Trees",
+      price: 2,
+      image: "/objects/foxstead-forest-trees.png",
+      description: "6 decorative forest tree tile variants",
+      items: "6 tree tile variants",
+      features: [
+        "PNG with transparency",
+        "Great for forest and world decoration",
+        "Multiple variants",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
       id: "foxstead-axe-iron",
       name: "Foxstead Iron Axe",
       price: 2,
