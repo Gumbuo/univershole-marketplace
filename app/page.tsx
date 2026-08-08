@@ -91,7 +91,7 @@ export default function Marketplace() {
     {
       id: "yellow-ghost-specter",
       name: "Yellow Ghost Specter",
-      price: 3.00,
+      price: 1.00,
       image: "/characters/yellow-ghost-specter.png",
       description: "8-direction animated ghost character with 18 combat animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -105,7 +105,7 @@ export default function Marketplace() {
     {
       id: "orange-ghost-specter",
       name: "Orange Ghost Specter",
-      price: 3.00,
+      price: 1.00,
       image: "/characters/orange-ghost-specter.png",
       description: "Fiery orange ghost with full combat animation set",
       animations: "112 total animations (14 types × 8 directions)",
@@ -119,7 +119,7 @@ export default function Marketplace() {
     {
       id: "red-ghost-specter",
       name: "Red Ghost Specter",
-      price: 3.00,
+      price: 1.00,
       image: "/characters/red-ghost-specter.png",
       description: "Aggressive red ghost with complete animation pack",
       animations: "112 total animations (14 types × 8 directions)",
@@ -133,7 +133,7 @@ export default function Marketplace() {
     {
       id: "green-ghost-specter",
       name: "Green Ghost Specter",
-      price: 3.00,
+      price: 1.00,
       image: "/characters/green-ghost-specter.png",
       description: "Toxic green ghost with full combat animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -147,7 +147,7 @@ export default function Marketplace() {
     {
       id: "blue-ghost-specter",
       name: "Blue Ghost Specter",
-      price: 3.00,
+      price: 1.00,
       image: "/characters/blue-ghost-specter.png",
       description: "Icy blue ghost with complete animation set",
       animations: "112 total animations (14 types × 8 directions)",
@@ -161,7 +161,7 @@ export default function Marketplace() {
     {
       id: "fire-elemental",
       name: "Fire Elemental",
-      price: 3.00,
+      price: 1.00,
       image: "/characters/fire-elemental.png",
       description: "Blazing fire elemental with explosive animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -175,7 +175,7 @@ export default function Marketplace() {
     {
       id: "steam-elemental",
       name: "Steam Elemental",
-      price: 3.00,
+      price: 1.00,
       image: "/characters/steam-elemental.png",
       description: "Mystical steam elemental with flowing animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -189,7 +189,7 @@ export default function Marketplace() {
     {
       id: "frost-elemental",
       name: "Frost Elemental",
-      price: 3.00,
+      price: 1.00,
       image: "/characters/frost-elemental.png",
       description: "Frozen frost elemental with icy animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -203,7 +203,7 @@ export default function Marketplace() {
     {
       id: "blood-elemental",
       name: "Blood Elemental",
-      price: 3.00,
+      price: 1.00,
       image: "/characters/blood-elemental.png",
       description: "Dark blood elemental with menacing animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -217,7 +217,7 @@ export default function Marketplace() {
     {
       id: "acid-elemental",
       name: "Acid Elemental",
-      price: 3.00,
+      price: 1.00,
       image: "/characters/acid-elemental.png",
       description: "Corrosive acid elemental with toxic animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -231,7 +231,7 @@ export default function Marketplace() {
     {
       id: "ice-golem",
       name: "Ice Golem",
-      price: 3.00,
+      price: 1.00,
       image: "/characters/ice-golem.png",
       description: "Massive ice golem with powerful animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -245,7 +245,7 @@ export default function Marketplace() {
     {
       id: "shadow-being",
       name: "Shadow Being",
-      price: 3.00,
+      price: 1.00,
       image: "/characters/shadow-being.png",
       description: "Mysterious shadow entity with dark animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -259,7 +259,7 @@ export default function Marketplace() {
     {
       id: "ghost-specter",
       name: "Ghost Specter",
-      price: 3.00,
+      price: 1.00,
       image: "/characters/ghost-specter.png",
       description: "Classic ghost specter with full combat set",
       animations: "112 total animations (14 types × 8 directions)",
@@ -273,7 +273,7 @@ export default function Marketplace() {
     {
       id: "skeleton-warrior",
       name: "Skeleton Warrior",
-      price: 3.00,
+      price: 1.00,
       image: "/characters/skeleton-warrior.png",
       description: "Undead skeleton warrior with melee combat",
       animations: "112 total animations (14 types × 8 directions)",
@@ -287,7 +287,7 @@ export default function Marketplace() {
     {
       id: "combat-robot",
       name: "Combat Robot",
-      price: 3.00,
+      price: 1.00,
       image: "/characters/combat-robot.png",
       description: "Advanced combat robot with tech animations",
       animations: "112 total animations (14 types × 8 directions)",
@@ -301,7 +301,7 @@ export default function Marketplace() {
     {
       id: "farmer-tom",
       name: "Farmer Tom",
-      price: 3.00,
+      price: 1.00,
       image: "/characters/farmer-tom.png",
       description: "Crypto-rich farmer character with gold chains, shades, and a cap",
       animations: "240 total frames (8 rotations + 4 animation types × 8 directions)",
@@ -316,7 +316,7 @@ export default function Marketplace() {
     {
       id: "alien-overlord-boss",
       name: "Alien Overlord Boss",
-      price: 3.00,
+      price: 1.00,
       image: "/characters/alien-overlord-boss.png",
       description: "Ultimate alien boss with premium animations",
       animations: "Unique boss-tier animation set",
@@ -2013,6 +2013,939 @@ export default function Marketplace() {
         'Seamless autotiling support',
         'Includes metadata JSON',
         'Ready for Godot, Unity, GameMaker',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: "medieval-tree-creature",
+      name: "Medieval Tree Creature",
+      price: 5.00,
+      image: "/characters/medieval-tree-creature.png",
+      description: "Vine-wrapped forest guardian with a gnarled bark body",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "256x256 high-detail pixel art",
+        "Nature/forest themed",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "skeletal-mech-bot",
+      name: "Skeletal Mech Bot",
+      price: 5.00,
+      image: "/characters/skeletal-mech-bot.png",
+      description: "Mechanical bot built from exposed skeletal limb struts",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "256x256 high-detail pixel art",
+        "Eerie sci-fi enemy design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "plated-war-mech",
+      name: "Plated War Mech",
+      price: 5.00,
+      image: "/characters/plated-war-mech.png",
+      description: "Heavily armored mech with reinforced plating and exposed gears",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "256x256 high-detail pixel art",
+        "Sci-fi armored unit",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "spinecrawler-skeleton",
+      name: "Spinecrawler Skeleton",
+      price: 5.00,
+      image: "/characters/spinecrawler-skeleton.png",
+      description: "Segmented centipede-spine skeleton with glowing titanium vertebrae and reactor nodes",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "256x256 high-detail pixel art",
+        "Horror/dungeon enemy design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "dragon-mech-boss",
+      name: "Dragon Mech Boss",
+      price: 5.00,
+      image: "/characters/dragon-mech-boss.png",
+      description: "Boss-tier dragon mech with idle and fire-breathing combat states",
+      animations: "16 total animations across 2 states (idle + breathing fire), 8-direction",
+      frameCount: 1,
+      features: [
+        "2 combat states included",
+        "256x256 high-detail pixel art",
+        "Boss-tier enemy design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "wolf-mech",
+      name: "Wolf Mech",
+      price: 5.00,
+      image: "/characters/wolf-mech.png",
+      description: "Pro-tier wolf-inspired mech with a sleek predatory silhouette",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "240x240 high-detail pixel art",
+        "Sci-fi predator mech design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "ancient-demon-golem",
+      name: "Ancient Demon Golem",
+      price: 5.00,
+      image: "/characters/ancient-demon-golem.png",
+      description: "Towering demon golem forged from ancient evil stone",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "256x256 high-detail pixel art",
+        "Dungeon boss design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "mech-overlord-siege",
+      name: "Mech Overlord — Siege",
+      price: 5.00,
+      image: "/characters/mech-overlord-siege.png",
+      description: "Siege-class Mech Overlord built for heavy assault",
+      animations: "16 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "16 combat animations included",
+        "256x256 high-detail pixel art",
+        "Heavy assault mech design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "mech-overlord-blade",
+      name: "Mech Overlord — Blade",
+      price: 5.00,
+      image: "/characters/mech-overlord-blade.png",
+      description: "Blade-class Mech Overlord, melee-focused with the richest animation set in the series",
+      animations: "34 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "34 combat animations included",
+        "256x256 high-detail pixel art",
+        "Melee-focused mech design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "mech-overlord-gatling",
+      name: "Mech Overlord — Gatling",
+      price: 5.00,
+      image: "/characters/mech-overlord-gatling.png",
+      description: "Gatling-class Mech Overlord, rapid-fire suppression unit",
+      animations: "16 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "16 combat animations included",
+        "256x256 high-detail pixel art",
+        "Rapid-fire suppression design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "mech-overlord-artillery",
+      name: "Mech Overlord — Artillery",
+      price: 5.00,
+      image: "/characters/mech-overlord-artillery.png",
+      description: "Artillery-class Mech Overlord, long-range bombardment specialist",
+      animations: "16 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "16 combat animations included",
+        "256x256 high-detail pixel art",
+        "Long-range bombardment design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "boss-mech-dreadnought",
+      name: "Boss Mech Dreadnought",
+      price: 5.00,
+      image: "/characters/boss-mech-dreadnought.png",
+      description: "Massive dreadnought-class boss mech with a full combat animation set",
+      animations: "24 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "24 combat animations included",
+        "256x256 high-detail pixel art",
+        "Dreadnought boss design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "crimson-blade-mech",
+      name: "Crimson Blade Mech",
+      price: 5.00,
+      image: "/characters/blood-blade-warrior.png",
+      description: "Armored mech warrior wielding twin crimson energy blades",
+      animations: "2 combat states (idle + electrified), 8-direction",
+      frameCount: 1,
+      features: [
+        "2 combat states included",
+        "168x168 high-detail pixel art",
+        "Dual energy-blade weapon design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "mg-spider-tank",
+      name: "MG Spider Tank",
+      price: 5.00,
+      image: "/characters/mg-spider-tank.png",
+      description: "Four-legged spider tank armed with a machine-gun turret",
+      animations: "24 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "24 combat animations included",
+        "168x168 high-detail pixel art",
+        "Four-legged tank design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "napalm-spider-tank",
+      name: "Napalm Spider Tank",
+      price: 5.00,
+      image: "/characters/napalm-spider-tank.png",
+      description: "Four-legged spider tank armed with a napalm launcher",
+      animations: "8 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "8 combat animations included",
+        "168x168 high-detail pixel art",
+        "Four-legged tank design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "rocket-spider-tank",
+      name: "Rocket Spider Tank",
+      price: 5.00,
+      image: "/characters/rocket-spider-tank.png",
+      description: "Four-legged spider tank armed with a rocket pod",
+      animations: "8 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "8 combat animations included",
+        "168x168 high-detail pixel art",
+        "Four-legged tank design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "laser-spider-tank",
+      name: "Laser Spider Tank",
+      price: 5.00,
+      image: "/characters/laser-spider-tank.png",
+      description: "Four-legged spider tank armed with a laser cannon",
+      animations: "8 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "8 combat animations included",
+        "168x168 high-detail pixel art",
+        "Four-legged tank design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "stone-golem",
+      name: "Stone Golem",
+      price: 5.00,
+      image: "/characters/stone-golem.png",
+      description: "Classic stone golem construct, slow and heavily armored",
+      animations: "1 animation, 8-direction",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "188x188 high-detail pixel art",
+        "Classic fantasy golem design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "fierce-dragon",
+      name: "Fierce Dragon",
+      price: 5.00,
+      image: "/characters/fierce-dragon.png",
+      description: "Red and black scaled dragon with wings",
+      animations: "21 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "21 combat animations included",
+        "236x236 high-detail pixel art",
+        "Winged dragon boss design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "trident-water-demon",
+      name: "Trident Water Demon",
+      price: 5.00,
+      image: "/characters/trident-water-demon.png",
+      description: "Evil aquatic demon with a finned tail, wielding a trident",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "228x228 high-detail pixel art",
+        "Aquatic demon design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "muscle-fox-mercenary",
+      name: "Muscle Fox Mercenary",
+      price: 5.00,
+      image: "/characters/muscle-fox-mercenary.png",
+      description: "Jacked anthropomorphic fox mercenary wielding an AK-47",
+      animations: "2 combat states, 8-direction",
+      frameCount: 1,
+      features: [
+        "2 combat states included",
+        "252x252 high-detail pixel art",
+        "Anthropomorphic mercenary design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "warrior-woman",
+      name: "Warrior Woman",
+      price: 5.00,
+      image: "/characters/warrior-woman.png",
+      description: "Orange-haired warrior woman with idle, sword-slash, and hands-extended combat states",
+      animations: "56 total animations across 3 combat states, 8-direction",
+      frameCount: 1,
+      features: [
+        "3 combat states included",
+        "56 total combat animations",
+        "60x60 pixel art",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "light-brown-bear",
+      name: "Light Brown Bear",
+      price: 5.00,
+      image: "/characters/light-brown-bear.png",
+      description: "Flat-shaded light brown bear, great for woodland or farm-themed games",
+      animations: "32 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "32 combat/movement animations included",
+        "88x88 pixel art",
+        "Woodland creature design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "old-man",
+      name: "Old Man",
+      price: 5.00,
+      image: "/characters/old-man.png",
+      description: "Bald elderly villager character, perfect for RPG or farm-sim NPCs",
+      animations: "32 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "32 animations included",
+        "44x44 pixel art",
+        "NPC/villager design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "blonde-farmer",
+      name: "Blonde Farmer",
+      price: 5.00,
+      image: "/characters/blonde-farmer.png",
+      description: "Blonde farmer with long hair and a dress",
+      animations: "64 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "64 animations included",
+        "44x44 pixel art",
+        "Farm-life character design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "pulse-caster-frame",
+      name: "Pulse-Caster Frame",
+      price: 5.00,
+      image: "/characters/pulse-caster-frame.png",
+      description: "Sleek energy-chaos mech with an arm-mounted plasma projector and cyan glow accents",
+      animations: "16 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "16 combat animations included",
+        "112x112 high-detail pixel art",
+        "Energy/chaos mech design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "scrap-storm-berserker",
+      name: "Scrap-Storm Berserker",
+      price: 5.00,
+      image: "/characters/scrap-storm-berserker.png",
+      description: "Chaotic damage-dealing mech built from scavenged scrap",
+      animations: "72 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "72 combat animations included",
+        "124x124 high-detail pixel art",
+        "Chaos-series mech design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "core-breaker-unit",
+      name: "Core-Breaker Unit",
+      price: 5.00,
+      image: "/characters/core-breaker-unit.png",
+      description: "Blue-eyed chaos-series mech built to break enemy cores",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "124x124 high-detail pixel art",
+        "Chaos-series mech design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "crawler-x-havoc-bot",
+      name: "Crawler-X Havoc Bot",
+      price: 5.00,
+      image: "/characters/crawler-x-havoc-bot.png",
+      description: "Skittering quadruped mech with a tail-mounted sawblade and dual plasma cutters",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "120x120 high-detail pixel art",
+        "Quadruped chaos mech design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "bark-armor-reptile",
+      name: "Bark-Armor Reptile",
+      price: 5.00,
+      image: "/characters/bark-armor-reptile.png",
+      description: "Quadruped reptile clad in living bark armor fused with vines, wielding a bone-root cleaver",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "256x256 high-detail pixel art",
+        "Forest monster design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "green-mech-lizard",
+      name: "Green Mech Lizard",
+      price: 5.00,
+      image: "/characters/green-mech-lizard.png",
+      description: "Green mechanized lizard hybrid, cybernetic reptile design",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "256x256 high-detail pixel art",
+        "Cybernetic reptile design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "swamp-gangster-amphibian",
+      name: "Swamp Gangster Amphibian",
+      price: 5.00,
+      image: "/characters/swamp-gangster-amphibian.png",
+      description: "Evil swamp-dwelling amphibian gangster with gold chains and diamond-studded shades",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "80x80 pixel art",
+        "Gangster/swamp themed design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "chig-the-outlaw",
+      name: "Chig the Outlaw",
+      price: 5.00,
+      image: "/characters/chig.png",
+      description: "Rugged outlaw gunslinger character with a wide-brim hat and sidearm",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "96x96 pixel art",
+        "Western/outlaw themed design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "evil-farmer-fox",
+      name: "Evil Farmer Fox",
+      price: 5.00,
+      image: "/characters/evil-farmer-fox.png",
+      description: "Mischievous farmer fox with fishing, mining, and tree-chopping work/combat states",
+      animations: "240 total animations across 4 states, 8-direction",
+      frameCount: 1,
+      features: [
+        "4 states included (idle, fishing, mining, chopping)",
+        "240 total animations",
+        "96x96 pixel art",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "chicken",
+      name: "Chicken",
+      price: 5.00,
+      image: "/characters/chicken.png",
+      description: "Walking chicken character, perfect for farm-sim games",
+      animations: "8 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "8 walking animations included",
+        "92x92 pixel art",
+        "Farm-sim themed design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "farmer-tom-classic",
+      name: "Classic Farmer Tom",
+      price: 5.00,
+      image: "/characters/farmer-tom-classic.png",
+      description: "Everyday farmer character — a down-to-earth alternative to the site's crypto-themed Farmer Tom",
+      animations: "48 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "48 animations included",
+        "92x92 pixel art",
+        "Classic farm-life design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "green-alien-player",
+      name: "Green Alien Player",
+      price: 5.00,
+      image: "/characters/green-alien-player.png",
+      description: "Green alien player character with the richest animation set of any new addition",
+      animations: "121 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "121 animations included",
+        "48x48 pixel art",
+        "Tagged as a player character",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: 'stone-block-plaza-tiles',
+      name: 'Stone Block Plaza Tiles',
+      price: 8.00,
+      description: 'Square top-down pixel-art tile set with 56 hand-crafted variations of finely dressed gray stone block',
+      image: '/tilesets/stone-block-plaza-tiles.png',
+      tilesetTiles: '56 variations',
+      features: [
+        '56 unique tile variations',
+        'Square top-down perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'steel-arena-wall-tiles-topdown',
+      name: 'Steel Arena Wall Tiles (Top-Down)',
+      price: 8.00,
+      description: 'Square top-down pixel-art tile set with 56 hand-crafted variations of brushed steel battle-arena wall',
+      image: '/tilesets/steel-arena-wall-tiles-topdown.png',
+      tilesetTiles: '56 variations',
+      features: [
+        '56 unique tile variations',
+        'Square top-down perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'steel-arena-wall-tiles-isometric',
+      name: 'Steel Arena Wall Tiles (Isometric)',
+      price: 8.00,
+      description: 'Isometric pixel-art tile set with 58 hand-crafted variations of brushed steel battle-arena wall',
+      image: '/tilesets/steel-arena-wall-tiles-isometric.png',
+      tilesetTiles: '58 variations',
+      features: [
+        '58 unique tile variations',
+        'Isometric perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'earth-tile-isometric',
+      name: 'Earth Tile (Isometric)',
+      price: 8.00,
+      description: 'Isometric pixel-art earth tile with 16 variations — cracked stone texture, brown/green palette, moss accents',
+      image: '/tilesets/earth-tile-isometric.png',
+      tilesetTiles: '16 variations',
+      features: [
+        '16 unique tile variations',
+        'Isometric perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'water-tile-isometric',
+      name: 'Water Tile (Isometric)',
+      price: 8.00,
+      description: 'Isometric pixel-art water tile with 16 variations',
+      image: '/tilesets/water-tile-isometric.png',
+      tilesetTiles: '16 variations',
+      features: [
+        '16 unique tile variations',
+        'Isometric perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'fire-tile-isometric',
+      name: 'Fire Tile (Isometric)',
+      price: 8.00,
+      description: 'Isometric pixel-art fire tile with 16 variations',
+      image: '/tilesets/fire-tile-isometric.png',
+      tilesetTiles: '16 variations',
+      features: [
+        '16 unique tile variations',
+        'Isometric perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'battle-arena-floor-plate-hex',
+      name: 'Battle Arena Floor Plate (Hex)',
+      price: 8.00,
+      description: 'Hex (pointy-top) floor plate tile with 9 variations — steel tile with slash marks and plasma burn discoloration',
+      image: '/tilesets/battle-arena-floor-plate-hex.png',
+      tilesetTiles: '9 variations',
+      features: [
+        '9 unique tile variations',
+        'Hex (pointy-top) perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'battle-arena-floor-plate-isometric',
+      name: 'Battle Arena Floor Plate (Isometric)',
+      price: 8.00,
+      description: 'Isometric floor plate tile with 16 variations — steel tile with slash marks and plasma burn discoloration',
+      image: '/tilesets/battle-arena-floor-plate-isometric.png',
+      tilesetTiles: '16 variations',
+      features: [
+        '16 unique tile variations',
+        'Isometric perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'reptile-biomech-floor-plate-hex',
+      name: 'Reptile Biomech Floor Plate (Hex)',
+      price: 8.00,
+      description: 'Hex (pointy-top) floor plate tile with 9 variations — scale-pattern engraving, glowing toxic green cracks, claw gouges',
+      image: '/tilesets/reptile-biomech-floor-plate-hex.png',
+      tilesetTiles: '9 variations',
+      features: [
+        '9 unique tile variations',
+        'Hex (pointy-top) perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'reptile-biomech-floor-plate-isometric',
+      name: 'Reptile Biomech Floor Plate (Isometric)',
+      price: 8.00,
+      description: 'Isometric floor plate tile with 16 variations — scale-pattern engraving, glowing toxic green cracks, claw gouges',
+      image: '/tilesets/reptile-biomech-floor-plate-isometric.png',
+      tilesetTiles: '16 variations',
+      features: [
+        '16 unique tile variations',
+        'Isometric perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'mechanical-floor-plate-isometric',
+      name: 'Mechanical Floor Plate (Isometric)',
+      price: 8.00,
+      description: 'Isometric floor plate tile with 16 variations — etched circuitry, glowing blue lines, corner bolts',
+      image: '/tilesets/mechanical-floor-plate-isometric.png',
+      tilesetTiles: '16 variations',
+      features: [
+        '16 unique tile variations',
+        'Isometric perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'mechanical-floor-plate-hex',
+      name: 'Mechanical Floor Plate (Hex)',
+      price: 8.00,
+      description: 'Hex (pointy-top) floor plate tile with 9 variations — etched circuitry, glowing blue lines, corner bolts',
+      image: '/tilesets/mechanical-floor-plate-hex.png',
+      tilesetTiles: '9 variations',
+      features: [
+        '9 unique tile variations',
+        'Hex (pointy-top) perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'mountain-floor-plate-hex',
+      name: 'Mountain Floor Plate (Hex)',
+      price: 8.00,
+      description: 'Hex (pointy-top) floor plate tile with 9 variations — jagged stone slab, snow dusting, glowing red fissures',
+      image: '/tilesets/mountain-floor-plate-hex.png',
+      tilesetTiles: '9 variations',
+      features: [
+        '9 unique tile variations',
+        'Hex (pointy-top) perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'mountain-floor-plate-isometric',
+      name: 'Mountain Floor Plate (Isometric)',
+      price: 8.00,
+      description: 'Isometric floor plate tile with 16 variations — jagged stone slab, snow dusting, glowing red fissures',
+      image: '/tilesets/mountain-floor-plate-isometric.png',
+      tilesetTiles: '16 variations',
+      features: [
+        '16 unique tile variations',
+        'Isometric perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'grassland-floor-plate-isometric',
+      name: 'Grassland Floor Plate (Isometric)',
+      price: 8.00,
+      description: 'Isometric floor plate tile with 16 variations — dry cracked earth with sparse grass tufts',
+      image: '/tilesets/grassland-floor-plate-isometric.png',
+      tilesetTiles: '16 variations',
+      features: [
+        '16 unique tile variations',
+        'Isometric perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'grassland-floor-plate-hex',
+      name: 'Grassland Floor Plate (Hex)',
+      price: 8.00,
+      description: 'Hex (pointy-top) floor plate tile with 9 variations — dry cracked earth with sparse grass tufts',
+      image: '/tilesets/grassland-floor-plate-hex.png',
+      tilesetTiles: '9 variations',
+      features: [
+        '9 unique tile variations',
+        'Hex (pointy-top) perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'forest-floor-plate-isometric',
+      name: 'Forest Floor Plate (Isometric)',
+      price: 8.00,
+      description: 'Isometric floor plate tile with 16 variations — interwoven roots with glowing amber cracks and moss',
+      image: '/tilesets/forest-floor-plate-isometric.png',
+      tilesetTiles: '16 variations',
+      features: [
+        '16 unique tile variations',
+        'Isometric perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'swamp-floor-plate-isometric',
+      name: 'Swamp Floor Plate (Isometric)',
+      price: 8.00,
+      description: 'Isometric floor plate tile with 16 variations — muddy ground with wet texture and faint green glow',
+      image: '/tilesets/swamp-floor-plate-isometric.png',
+      tilesetTiles: '16 variations',
+      features: [
+        '16 unique tile variations',
+        'Isometric perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'forest-floor-plate-hex',
+      name: 'Forest Floor Plate (Hex)',
+      price: 8.00,
+      description: 'Hex (pointy-top) floor plate tile with 9 variations — interwoven roots with glowing amber cracks and moss',
+      image: '/tilesets/forest-floor-plate-hex.png',
+      tilesetTiles: '9 variations',
+      features: [
+        '9 unique tile variations',
+        'Hex (pointy-top) perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'swamp-floor-plate-hex',
+      name: 'Swamp Floor Plate (Hex)',
+      price: 8.00,
+      description: 'Hex (pointy-top) floor plate tile with 9 variations — muddy ground with wet texture and faint green glow',
+      image: '/tilesets/swamp-floor-plate-hex.png',
+      tilesetTiles: '9 variations',
+      features: [
+        '9 unique tile variations',
+        'Hex (pointy-top) perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'color-coded-hex-tiles',
+      name: 'Color-Coded Marker Tiles (Hex)',
+      price: 8.00,
+      description: 'Hex (pointy-top) tile set with 16 variations in green, blue, yellow, and red — great for gameplay markers or zone indicators',
+      image: '/tilesets/color-coded-hex-tiles.png',
+      tilesetTiles: '16 variations',
+      features: [
+        '16 unique tile variations',
+        'Hex (pointy-top) perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'tetris-hex-tiles',
+      name: 'Tetris-Style Hex Tiles',
+      price: 8.00,
+      description: 'Hex (pointy-top) tile set with 16 Tetris-inspired block variations',
+      image: '/tilesets/tetris-hex-tiles.png',
+      tilesetTiles: '16 variations',
+      features: [
+        '16 unique tile variations',
+        'Hex (pointy-top) perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'farmland-hex-tiles-v1',
+      name: 'Farmland Hex Tiles',
+      price: 8.00,
+      description: 'Hex (pointy-top) tile set with 6 variations of lush farmland with neat crop rows',
+      image: '/tilesets/farmland-hex-tiles-v1.png',
+      tilesetTiles: '6 variations',
+      features: [
+        '6 unique tile variations',
+        'Hex (pointy-top) perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'farmland-hex-tiles-v2',
+      name: 'Farmland Hex Tiles — Lush Variant',
+      price: 8.00,
+      description: 'Hex (pointy-top) tile set with 6 variations of lush green farmland',
+      image: '/tilesets/farmland-hex-tiles-v2.png',
+      tilesetTiles: '6 variations',
+      features: [
+        '6 unique tile variations',
+        'Hex (pointy-top) perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'snowy-mountains-hex-tiles',
+      name: 'Snowy Mountains Hex Tiles',
+      price: 8.00,
+      description: 'Hex (pointy-top) tile set with 16 variations of snow-capped mountains',
+      image: '/tilesets/snowy-mountains-hex-tiles.png',
+      tilesetTiles: '16 variations',
+      features: [
+        '16 unique tile variations',
+        'Hex (pointy-top) perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'pond-water-hex-tiles',
+      name: 'Pond Water Hex Tiles',
+      price: 8.00,
+      description: 'Hex (pointy-top) tile set with 16 variations of blue pond water',
+      image: '/tilesets/pond-water-hex-tiles.png',
+      tilesetTiles: '16 variations',
+      features: [
+        '16 unique tile variations',
+        'Hex (pointy-top) perspective',
+        'Transparent PNG, ready to tile',
+        'Commercial license included'
+      ]
+    },
+    {
+      id: 'forest-trees-hex-tiles',
+      name: 'Forest & Trees Hex Tiles',
+      price: 8.00,
+      description: 'Hex (pointy-top) tile set with 16 variations of forest ground and trees',
+      image: '/tilesets/forest-trees-hex-tiles.png',
+      tilesetTiles: '16 variations',
+      features: [
+        '16 unique tile variations',
+        'Hex (pointy-top) perspective',
+        'Transparent PNG, ready to tile',
         'Commercial license included'
       ]
     }
