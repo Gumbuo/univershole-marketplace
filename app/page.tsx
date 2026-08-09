@@ -2332,66 +2332,6 @@ export default function Marketplace() {
       ]
     },
     {
-      id: "warrior-woman",
-      name: "Warrior Woman",
-      price: 5.00,
-      image: "/characters/warrior-woman.png",
-      description: "Orange-haired warrior woman with idle, sword-slash, and hands-extended combat states",
-      animations: "56 total animations across 3 combat states, 8-direction",
-      frameCount: 1,
-      features: [
-        "3 combat states included",
-        "56 total combat animations",
-        "60x60 pixel art",
-        "Full asset pack included in download"
-      ]
-    },
-    {
-      id: "light-brown-bear",
-      name: "Light Brown Bear",
-      price: 5.00,
-      image: "/characters/light-brown-bear.png",
-      description: "Flat-shaded light brown bear, great for woodland or farm-themed games",
-      animations: "32 total animations, 8-direction",
-      frameCount: 1,
-      features: [
-        "32 combat/movement animations included",
-        "88x88 pixel art",
-        "Woodland creature design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
-      id: "old-man",
-      name: "Old Man",
-      price: 5.00,
-      image: "/characters/old-man.png",
-      description: "Bald elderly villager character, perfect for RPG or farm-sim NPCs",
-      animations: "32 total animations, 8-direction",
-      frameCount: 1,
-      features: [
-        "32 animations included",
-        "44x44 pixel art",
-        "NPC/villager design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
-      id: "blonde-farmer",
-      name: "Blonde Farmer",
-      price: 5.00,
-      image: "/characters/blonde-farmer.png",
-      description: "Blonde farmer with long hair and a dress",
-      animations: "64 total animations, 8-direction",
-      frameCount: 1,
-      features: [
-        "64 animations included",
-        "44x44 pixel art",
-        "Farm-life character design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
       id: "pulse-caster-frame",
       name: "Pulse-Caster Frame",
       price: 5.00,
