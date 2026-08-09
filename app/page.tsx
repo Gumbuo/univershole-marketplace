@@ -5,6 +5,7 @@ import { CryptoPayment } from "./components/CryptoPayment";
 import { SolanaPayment } from "./components/SolanaPayment";
 import { BitcoinPayment } from "./components/BitcoinPayment";
 import { AnimatedCharacter } from "./components/AnimatedCharacter";
+import { VoteButton } from "./components/VoteButton";
 
 
 declare global {
@@ -22,6 +23,7 @@ export default function Marketplace() {
   const [paymentSuccess, setPaymentSuccess] = useState(false);
   const [purchasedProducts, setPurchasedProducts] = useState<Set<string>>(new Set());
   const [connectedWallet, setConnectedWallet] = useState<string | null>(null);
+  const [voteCounts, setVoteCounts] = useState<Record<string, number>>({});
 
   // Check for connected wallet and fetch purchased products
   useEffect(() => {
@@ -89,30 +91,15 @@ export default function Marketplace() {
 
   const products = [
     {
-      id: "spider-tank-vehicle",
-      name: "Tank Vehicle",
-      price: 5.00,
-      image: "/characters/spider-tank-vehicle.png",
-      description: "Four-legged mechanical tank with cannon turret",
-      vehicleSprites: "8 directional static sprites (64×64px)",
-      vehicle: true,
-      features: [
-        "Full 8-direction coverage",
-        "High detail pixel art",
-        "Tank hull with cannon turret",
-        "Perfect for top-down games"
-      ]
-    },
-    {
       id: "mg-spider-tank",
       name: "MG Spider Tank",
       price: 5.00,
       image: "/characters/mg-spider-tank.png",
       description: "Four-legged spider tank armed with a machine-gun turret",
-      animations: "24 total animations, 8-direction",
-      frameCount: 1,
+      vehicleSprites: "8 directional static sprites, 168x168 high-detail pixel art",
+      vehicle: true,
       features: [
-        "24 combat animations included",
+        "Full 8-direction coverage",
         "168x168 high-detail pixel art",
         "Four-legged tank design",
         "Full asset pack included in download"
@@ -124,10 +111,10 @@ export default function Marketplace() {
       price: 5.00,
       image: "/characters/napalm-spider-tank.png",
       description: "Four-legged spider tank armed with a napalm launcher",
-      animations: "8 total animations, 8-direction",
-      frameCount: 1,
+      vehicleSprites: "8 directional static sprites, 168x168 high-detail pixel art",
+      vehicle: true,
       features: [
-        "8 combat animations included",
+        "Full 8-direction coverage",
         "168x168 high-detail pixel art",
         "Four-legged tank design",
         "Full asset pack included in download"
@@ -139,10 +126,10 @@ export default function Marketplace() {
       price: 5.00,
       image: "/characters/rocket-spider-tank.png",
       description: "Four-legged spider tank armed with a rocket pod",
-      animations: "8 total animations, 8-direction",
-      frameCount: 1,
+      vehicleSprites: "8 directional static sprites, 168x168 high-detail pixel art",
+      vehicle: true,
       features: [
-        "8 combat animations included",
+        "Full 8-direction coverage",
         "168x168 high-detail pixel art",
         "Four-legged tank design",
         "Full asset pack included in download"
@@ -154,10 +141,10 @@ export default function Marketplace() {
       price: 5.00,
       image: "/characters/laser-spider-tank.png",
       description: "Four-legged spider tank armed with a laser cannon",
-      animations: "8 total animations, 8-direction",
-      frameCount: 1,
+      vehicleSprites: "8 directional static sprites, 168x168 high-detail pixel art",
+      vehicle: true,
       features: [
-        "8 combat animations included",
+        "Full 8-direction coverage",
         "168x168 high-detail pixel art",
         "Four-legged tank design",
         "Full asset pack included in download"
@@ -1675,7 +1662,7 @@ export default function Marketplace() {
       image: "/characters/medieval-tree-creature.png",
       description: "Vine-wrapped forest guardian with a gnarled bark body",
       animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "8-direction coverage",
         "256x256 high-detail pixel art",
@@ -1690,7 +1677,7 @@ export default function Marketplace() {
       image: "/characters/skeletal-mech-bot.png",
       description: "Mechanical bot built from exposed skeletal limb struts",
       animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "8-direction coverage",
         "256x256 high-detail pixel art",
@@ -1705,7 +1692,7 @@ export default function Marketplace() {
       image: "/characters/plated-war-mech.png",
       description: "Heavily armored mech with reinforced plating and exposed gears",
       animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "8-direction coverage",
         "256x256 high-detail pixel art",
@@ -1720,7 +1707,7 @@ export default function Marketplace() {
       image: "/characters/ancient-demon-golem.png",
       description: "Towering demon golem forged from ancient evil stone",
       animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "8-direction coverage",
         "256x256 high-detail pixel art",
@@ -1735,7 +1722,7 @@ export default function Marketplace() {
       image: "/characters/mech-overlord-siege.png",
       description: "Siege-class Mech Overlord built for heavy assault",
       animations: "16 total animations, 8-direction",
-      frameCount: 1,
+      frameCount: 9,
       features: [
         "16 combat animations included",
         "256x256 high-detail pixel art",
@@ -1750,7 +1737,7 @@ export default function Marketplace() {
       image: "/characters/mech-overlord-blade.png",
       description: "Blade-class Mech Overlord, melee-focused with the richest animation set in the series",
       animations: "34 total animations, 8-direction",
-      frameCount: 1,
+      frameCount: 9,
       features: [
         "34 combat animations included",
         "256x256 high-detail pixel art",
@@ -1765,7 +1752,7 @@ export default function Marketplace() {
       image: "/characters/mech-overlord-gatling.png",
       description: "Gatling-class Mech Overlord, rapid-fire suppression unit",
       animations: "16 total animations, 8-direction",
-      frameCount: 1,
+      frameCount: 9,
       features: [
         "16 combat animations included",
         "256x256 high-detail pixel art",
@@ -1780,7 +1767,7 @@ export default function Marketplace() {
       image: "/characters/mech-overlord-artillery.png",
       description: "Artillery-class Mech Overlord, long-range bombardment specialist",
       animations: "16 total animations, 8-direction",
-      frameCount: 1,
+      frameCount: 9,
       features: [
         "16 combat animations included",
         "256x256 high-detail pixel art",
@@ -1795,7 +1782,7 @@ export default function Marketplace() {
       image: "/characters/boss-mech-dreadnought.png",
       description: "Massive dreadnought-class boss mech with a full combat animation set",
       animations: "24 total animations, 8-direction",
-      frameCount: 1,
+      frameCount: 9,
       features: [
         "24 combat animations included",
         "256x256 high-detail pixel art",
@@ -1810,7 +1797,7 @@ export default function Marketplace() {
       image: "/characters/blood-blade-warrior.png",
       description: "Armored mech warrior wielding twin crimson energy blades",
       animations: "2 combat states (idle + electrified), 8-direction",
-      frameCount: 1,
+      frameCount: 17,
       features: [
         "2 combat states included",
         "168x168 high-detail pixel art",
@@ -1825,7 +1812,7 @@ export default function Marketplace() {
       image: "/characters/stone-golem.png",
       description: "Classic stone golem construct, slow and heavily armored",
       animations: "1 animation, 8-direction",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "8-direction coverage",
         "188x188 high-detail pixel art",
@@ -1840,7 +1827,7 @@ export default function Marketplace() {
       image: "/characters/trident-water-demon.png",
       description: "Evil aquatic demon with a finned tail, wielding a trident",
       animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "8-direction coverage",
         "228x228 high-detail pixel art",
@@ -1855,7 +1842,7 @@ export default function Marketplace() {
       image: "/characters/muscle-fox-mercenary.png",
       description: "Jacked anthropomorphic fox mercenary wielding an AK-47",
       animations: "2 combat states, 8-direction",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "2 combat states included",
         "252x252 high-detail pixel art",
@@ -1870,7 +1857,7 @@ export default function Marketplace() {
       image: "/characters/pulse-caster-frame.png",
       description: "Sleek energy-chaos mech with an arm-mounted plasma projector and cyan glow accents",
       animations: "16 total animations, 8-direction",
-      frameCount: 1,
+      frameCount: 9,
       features: [
         "16 combat animations included",
         "112x112 high-detail pixel art",
@@ -1885,7 +1872,7 @@ export default function Marketplace() {
       image: "/characters/scrap-storm-berserker.png",
       description: "Chaotic damage-dealing mech built from scavenged scrap",
       animations: "72 total animations, 8-direction",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "72 combat animations included",
         "124x124 high-detail pixel art",
@@ -1900,7 +1887,7 @@ export default function Marketplace() {
       image: "/characters/core-breaker-unit.png",
       description: "Blue-eyed chaos-series mech built to break enemy cores",
       animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "8-direction coverage",
         "124x124 high-detail pixel art",
@@ -1915,7 +1902,7 @@ export default function Marketplace() {
       image: "/characters/chig.png",
       description: "Rugged outlaw gunslinger character with a wide-brim hat and sidearm",
       animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "8-direction coverage",
         "96x96 pixel art",
@@ -1930,7 +1917,7 @@ export default function Marketplace() {
       image: "/characters/evil-farmer-fox.png",
       description: "Mischievous farmer fox with fishing, mining, and tree-chopping work/combat states",
       animations: "240 total animations across 4 states, 8-direction",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "4 states included (idle, fishing, mining, chopping)",
         "240 total animations",
@@ -1945,7 +1932,7 @@ export default function Marketplace() {
       image: "/characters/chicken.png",
       description: "Walking chicken character, perfect for farm-sim games",
       animations: "8 total animations, 8-direction",
-      frameCount: 1,
+      frameCount: 6,
       features: [
         "8 walking animations included",
         "92x92 pixel art",
@@ -1960,7 +1947,7 @@ export default function Marketplace() {
       image: "/characters/farmer-tom-classic.png",
       description: "Everyday farmer character — a down-to-earth alternative to the site's crypto-themed Farmer Tom",
       animations: "48 total animations, 8-direction",
-      frameCount: 1,
+      frameCount: 6,
       features: [
         "48 animations included",
         "92x92 pixel art",
@@ -1975,7 +1962,7 @@ export default function Marketplace() {
       image: "/characters/spinecrawler-skeleton.png",
       description: "Segmented centipede-spine skeleton with glowing titanium vertebrae and reactor nodes",
       animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "8-direction coverage",
         "256x256 high-detail pixel art",
@@ -1990,7 +1977,7 @@ export default function Marketplace() {
       image: "/characters/dragon-mech-boss.png",
       description: "Boss-tier dragon mech with idle and fire-breathing combat states",
       animations: "16 total animations across 2 states (idle + breathing fire), 8-direction",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "2 combat states included",
         "256x256 high-detail pixel art",
@@ -2005,7 +1992,7 @@ export default function Marketplace() {
       image: "/characters/wolf-mech.png",
       description: "Pro-tier wolf-inspired mech with a sleek predatory silhouette",
       animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "8-direction coverage",
         "240x240 high-detail pixel art",
@@ -2020,7 +2007,7 @@ export default function Marketplace() {
       image: "/characters/fierce-dragon.png",
       description: "Red and black scaled dragon with wings",
       animations: "21 total animations, 8-direction",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "21 combat animations included",
         "236x236 high-detail pixel art",
@@ -2035,7 +2022,7 @@ export default function Marketplace() {
       image: "/characters/crawler-x-havoc-bot.png",
       description: "Skittering quadruped mech with a tail-mounted sawblade and dual plasma cutters",
       animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "8-direction coverage",
         "120x120 high-detail pixel art",
@@ -2050,7 +2037,7 @@ export default function Marketplace() {
       image: "/characters/bark-armor-reptile.png",
       description: "Quadruped reptile clad in living bark armor fused with vines, wielding a bone-root cleaver",
       animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "8-direction coverage",
         "256x256 high-detail pixel art",
@@ -2065,7 +2052,7 @@ export default function Marketplace() {
       image: "/characters/green-mech-lizard.png",
       description: "Green mechanized lizard hybrid, cybernetic reptile design",
       animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "8-direction coverage",
         "256x256 high-detail pixel art",
@@ -2080,7 +2067,7 @@ export default function Marketplace() {
       image: "/characters/swamp-gangster-amphibian.png",
       description: "Evil swamp-dwelling amphibian gangster with gold chains and diamond-studded shades",
       animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
+      frameCount: 8,
       features: [
         "8-direction coverage",
         "80x80 pixel art",
@@ -2095,7 +2082,7 @@ export default function Marketplace() {
       image: "/characters/green-alien-player.png",
       description: "Green alien player character with the richest animation set of any new addition",
       animations: "121 total animations, 8-direction",
-      frameCount: 1,
+      frameCount: 6,
       features: [
         "121 animations included",
         "48x48 pixel art",
@@ -2902,6 +2889,19 @@ export default function Marketplace() {
   const tilesets = products.filter(p => p.tilesetTiles);
   const vehicles = products.filter(p => p.vehicle);
 
+  // Vote counts for "which character should get more animations next"
+  useEffect(() => {
+    const ids = characters.map((c) => c.id);
+    if (ids.length === 0) return;
+    fetch(`/api/votes?ids=${ids.join(",")}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.counts) setVoteCounts(data.counts);
+      })
+      .catch((error) => console.error("Error fetching vote counts:", error));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-cyan-950 to-gray-900 text-white">
 
@@ -2947,9 +2947,13 @@ export default function Marketplace() {
       {/* Products Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-cyan-400">
+          <h2 className="text-3xl font-bold text-center mb-2 text-cyan-400">
             Available Characters
           </h2>
+          <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto text-sm">
+            New animations are being added to these characters every day — vote 🔥 on the ones
+            you want prioritized next.
+          </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {characters.map((product) => (
@@ -2984,7 +2988,9 @@ export default function Marketplace() {
                       <span className="text-gray-300">{feature}</span>
                     </li>
                   ))}
-</ul>                {purchasedProducts.has(product.id) ? (                  <button                    onClick={() => handleDownload(product.id)}                    className="w-full py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 rounded-lg font-bold transition-all"                  >                    Download                  </button>                ) : (                  <button                    onClick={() => {                      setSelectedProduct(product.id);                      setSelectedPrice(product.price);                      setSelectedName(product.name);                      setPaymentMethod(null);                      setPaymentSuccess(false);                    }}                    className="w-full py-3 bg-gradient-to-r from-cyan-600 to-green-600 hover:from-cyan-700 hover:to-green-700 rounded-lg font-bold transition-all"                  >                    Buy Now                  </button>                )}
+</ul>
+                <VoteButton productId={product.id} initialCount={voteCounts[product.id] ?? 0} />
+                {purchasedProducts.has(product.id) ? (                  <button                    onClick={() => handleDownload(product.id)}                    className="w-full py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 rounded-lg font-bold transition-all"                  >                    Download                  </button>                ) : (                  <button                    onClick={() => {                      setSelectedProduct(product.id);                      setSelectedPrice(product.price);                      setSelectedName(product.name);                      setPaymentMethod(null);                      setPaymentSuccess(false);                    }}                    className="w-full py-3 bg-gradient-to-r from-cyan-600 to-green-600 hover:from-cyan-700 hover:to-green-700 rounded-lg font-bold transition-all"                  >                    Buy Now                  </button>                )}
               </div>
             ))}
           </div>

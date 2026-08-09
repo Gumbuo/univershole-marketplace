@@ -46,4 +46,23 @@ export const kv = {
       return [];
     }
   },
+
+  async sismember(key: string, member: string) {
+    try {
+      const result = await redis.sismember(key, member);
+      return result === 1;
+    } catch (error) {
+      console.error('Redis SISMEMBER error:', error);
+      return false;
+    }
+  },
+
+  async scard(key: string) {
+    try {
+      return await redis.scard(key);
+    } catch (error) {
+      console.error('Redis SCARD error:', error);
+      return 0;
+    }
+  },
 };
