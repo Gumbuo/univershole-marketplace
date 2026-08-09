@@ -1722,7 +1722,7 @@ export default function Marketplace() {
       image: "/characters/mech-overlord-siege.png",
       description: "Siege-class Mech Overlord built for heavy assault",
       animations: "16 total animations, 8-direction",
-      frameCount: 9,
+      frameCount: 8,
       features: [
         "16 combat animations included",
         "256x256 high-detail pixel art",
@@ -1737,7 +1737,7 @@ export default function Marketplace() {
       image: "/characters/mech-overlord-blade.png",
       description: "Blade-class Mech Overlord, melee-focused with the richest animation set in the series",
       animations: "34 total animations, 8-direction",
-      frameCount: 9,
+      frameCount: 8,
       features: [
         "34 combat animations included",
         "256x256 high-detail pixel art",
@@ -1752,7 +1752,7 @@ export default function Marketplace() {
       image: "/characters/mech-overlord-gatling.png",
       description: "Gatling-class Mech Overlord, rapid-fire suppression unit",
       animations: "16 total animations, 8-direction",
-      frameCount: 9,
+      frameCount: 8,
       features: [
         "16 combat animations included",
         "256x256 high-detail pixel art",
@@ -1767,7 +1767,7 @@ export default function Marketplace() {
       image: "/characters/mech-overlord-artillery.png",
       description: "Artillery-class Mech Overlord, long-range bombardment specialist",
       animations: "16 total animations, 8-direction",
-      frameCount: 9,
+      frameCount: 8,
       features: [
         "16 combat animations included",
         "256x256 high-detail pixel art",
@@ -1782,7 +1782,7 @@ export default function Marketplace() {
       image: "/characters/boss-mech-dreadnought.png",
       description: "Massive dreadnought-class boss mech with a full combat animation set",
       animations: "24 total animations, 8-direction",
-      frameCount: 9,
+      frameCount: 8,
       features: [
         "24 combat animations included",
         "256x256 high-detail pixel art",
@@ -1797,7 +1797,7 @@ export default function Marketplace() {
       image: "/characters/blood-blade-warrior.png",
       description: "Armored mech warrior wielding twin crimson energy blades",
       animations: "2 combat states (idle + electrified), 8-direction",
-      frameCount: 17,
+      frameCount: 8,
       features: [
         "2 combat states included",
         "168x168 high-detail pixel art",
@@ -1836,28 +1836,13 @@ export default function Marketplace() {
       ]
     },
     {
-      id: "muscle-fox-mercenary",
-      name: "Muscle Fox Mercenary",
-      price: 5.00,
-      image: "/characters/muscle-fox-mercenary.png",
-      description: "Jacked anthropomorphic fox mercenary wielding an AK-47",
-      animations: "2 combat states, 8-direction",
-      frameCount: 8,
-      features: [
-        "2 combat states included",
-        "252x252 high-detail pixel art",
-        "Anthropomorphic mercenary design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
       id: "pulse-caster-frame",
       name: "Pulse-Caster Frame",
       price: 5.00,
       image: "/characters/pulse-caster-frame.png",
       description: "Sleek energy-chaos mech with an arm-mounted plasma projector and cyan glow accents",
       animations: "16 total animations, 8-direction",
-      frameCount: 9,
+      frameCount: 8,
       features: [
         "16 combat animations included",
         "112x112 high-detail pixel art",
@@ -1911,43 +1896,13 @@ export default function Marketplace() {
       ]
     },
     {
-      id: "evil-farmer-fox",
-      name: "Evil Farmer Fox",
-      price: 5.00,
-      image: "/characters/evil-farmer-fox.png",
-      description: "Mischievous farmer fox with fishing, mining, and tree-chopping work/combat states",
-      animations: "240 total animations across 4 states, 8-direction",
-      frameCount: 8,
-      features: [
-        "4 states included (idle, fishing, mining, chopping)",
-        "240 total animations",
-        "96x96 pixel art",
-        "Full asset pack included in download"
-      ]
-    },
-    {
-      id: "chicken",
-      name: "Chicken",
-      price: 5.00,
-      image: "/characters/chicken.png",
-      description: "Walking chicken character, perfect for farm-sim games",
-      animations: "8 total animations, 8-direction",
-      frameCount: 6,
-      features: [
-        "8 walking animations included",
-        "92x92 pixel art",
-        "Farm-sim themed design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
       id: "farmer-tom-classic",
       name: "Classic Farmer Tom",
       price: 5.00,
       image: "/characters/farmer-tom-classic.png",
       description: "Everyday farmer character — a down-to-earth alternative to the site's crypto-themed Farmer Tom",
       animations: "48 total animations, 8-direction",
-      frameCount: 6,
+      frameCount: 8,
       features: [
         "48 animations included",
         "92x92 pixel art",
@@ -2061,28 +2016,13 @@ export default function Marketplace() {
       ]
     },
     {
-      id: "swamp-gangster-amphibian",
-      name: "Swamp Gangster Amphibian",
-      price: 5.00,
-      image: "/characters/swamp-gangster-amphibian.png",
-      description: "Evil swamp-dwelling amphibian gangster with gold chains and diamond-studded shades",
-      animations: "8-direction static sprite (single idle pose)",
-      frameCount: 8,
-      features: [
-        "8-direction coverage",
-        "80x80 pixel art",
-        "Gangster/swamp themed design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
       id: "green-alien-player",
       name: "Green Alien Player",
       price: 5.00,
       image: "/characters/green-alien-player.png",
       description: "Green alien player character with the richest animation set of any new addition",
       animations: "121 total animations, 8-direction",
-      frameCount: 6,
+      frameCount: 8,
       features: [
         "121 animations included",
         "48x48 pixel art",
