@@ -89,246 +89,6 @@ export default function Marketplace() {
 
   const products = [
     {
-      id: "yellow-ghost-specter",
-      name: "Yellow Ghost Specter",
-      price: 1.00,
-      image: "/characters/yellow-ghost-specter.png",
-      description: "8-direction animated ghost character with 18 combat animations",
-      animations: "112 total animations (14 types × 8 directions)",
-      features: [
-        "Walking, running, idle animations",
-        "Combat moves: punches, kicks, fireballs",
-        "Special attacks: hurricane kick, flying kick",
-        "Getting hit & death animations"
-      ]
-    },
-    {
-      id: "orange-ghost-specter",
-      name: "Orange Ghost Specter",
-      price: 1.00,
-      image: "/characters/orange-ghost-specter.png",
-      description: "Fiery orange ghost with full combat animation set",
-      animations: "112 total animations (14 types × 8 directions)",
-      features: [
-        "Walking, running, idle animations",
-        "Combat moves: punches, kicks, fireballs",
-        "Special attacks: hurricane kick, flying kick",
-        "Getting hit & death animations"
-      ]
-    },
-    {
-      id: "red-ghost-specter",
-      name: "Red Ghost Specter",
-      price: 1.00,
-      image: "/characters/red-ghost-specter.png",
-      description: "Aggressive red ghost with complete animation pack",
-      animations: "112 total animations (14 types × 8 directions)",
-      features: [
-        "Walking, running, idle animations",
-        "Combat moves: punches, kicks, fireballs",
-        "Special attacks: hurricane kick, flying kick",
-        "Getting hit & death animations"
-      ]
-    },
-    {
-      id: "green-ghost-specter",
-      name: "Green Ghost Specter",
-      price: 1.00,
-      image: "/characters/green-ghost-specter.png",
-      description: "Toxic green ghost with full combat animations",
-      animations: "112 total animations (14 types × 8 directions)",
-      features: [
-        "Walking, running, idle animations",
-        "Combat moves: punches, kicks, fireballs",
-        "Special attacks: hurricane kick, flying kick",
-        "Getting hit & death animations"
-      ]
-    },
-    {
-      id: "blue-ghost-specter",
-      name: "Blue Ghost Specter",
-      price: 1.00,
-      image: "/characters/blue-ghost-specter.png",
-      description: "Icy blue ghost with complete animation set",
-      animations: "112 total animations (14 types × 8 directions)",
-      features: [
-        "Walking, running, idle animations",
-        "Combat moves: punches, kicks, fireballs",
-        "Special attacks: hurricane kick, flying kick",
-        "Getting hit & death animations"
-      ]
-    },
-    {
-      id: "fire-elemental",
-      name: "Fire Elemental",
-      price: 1.00,
-      image: "/characters/fire-elemental.png",
-      description: "Blazing fire elemental with explosive animations",
-      animations: "112 total animations (14 types × 8 directions)",
-      features: [
-        "Walking, running, idle animations",
-        "Powerful fireball attacks",
-        "Hurricane kick, flying kick",
-        "Combat and reaction animations"
-      ]
-    },
-    {
-      id: "steam-elemental",
-      name: "Steam Elemental",
-      price: 1.00,
-      image: "/characters/steam-elemental.png",
-      description: "Mystical steam elemental with flowing animations",
-      animations: "112 total animations (14 types × 8 directions)",
-      features: [
-        "Walking, running, idle animations",
-        "Steam-based attacks",
-        "Full combat move set",
-        "Unique visual effects"
-      ]
-    },
-    {
-      id: "frost-elemental",
-      name: "Frost Elemental",
-      price: 1.00,
-      image: "/characters/frost-elemental.png",
-      description: "Frozen frost elemental with icy animations",
-      animations: "112 total animations (14 types × 8 directions)",
-      features: [
-        "Walking, running, idle animations",
-        "Ice-based attacks",
-        "Complete combat set",
-        "Freezing effects"
-      ]
-    },
-    {
-      id: "blood-elemental",
-      name: "Blood Elemental",
-      price: 1.00,
-      image: "/characters/blood-elemental.png",
-      description: "Dark blood elemental with menacing animations",
-      animations: "112 total animations (14 types × 8 directions)",
-      features: [
-        "Walking, running, idle animations",
-        "Blood-based attacks",
-        "Full combat animations",
-        "Dark visual effects"
-      ]
-    },
-    {
-      id: "acid-elemental",
-      name: "Acid Elemental",
-      price: 1.00,
-      image: "/characters/acid-elemental.png",
-      description: "Corrosive acid elemental with toxic animations",
-      animations: "112 total animations (14 types × 8 directions)",
-      features: [
-        "Walking, running, idle animations",
-        "Acid splash attacks",
-        "Complete combat set",
-        "Toxic effects"
-      ]
-    },
-    {
-      id: "ice-golem",
-      name: "Ice Golem",
-      price: 1.00,
-      image: "/characters/ice-golem.png",
-      description: "Massive ice golem with powerful animations",
-      animations: "112 total animations (14 types × 8 directions)",
-      features: [
-        "Heavy walking & running",
-        "Devastating melee attacks",
-        "Ground pound abilities",
-        "Boss-tier animations"
-      ]
-    },
-    {
-      id: "shadow-being",
-      name: "Shadow Being",
-      price: 1.00,
-      image: "/characters/shadow-being.png",
-      description: "Mysterious shadow entity with dark animations",
-      animations: "112 total animations (14 types × 8 directions)",
-      features: [
-        "Ethereal movement",
-        "Shadow-based attacks",
-        "Stealth animations",
-        "Unique visual style"
-      ]
-    },
-    {
-      id: "ghost-specter",
-      name: "Ghost Specter",
-      price: 1.00,
-      image: "/characters/ghost-specter.png",
-      description: "Classic ghost specter with full combat set",
-      animations: "112 total animations (14 types × 8 directions)",
-      features: [
-        "Walking, running, idle animations",
-        "Combat moves: punches, kicks, fireballs",
-        "Special attacks",
-        "Reaction animations"
-      ]
-    },
-    {
-      id: "skeleton-warrior",
-      name: "Skeleton Warrior",
-      price: 1.00,
-      image: "/characters/skeleton-warrior.png",
-      description: "Undead skeleton warrior with melee combat",
-      animations: "112 total animations (14 types × 8 directions)",
-      features: [
-        "Armored skeleton design",
-        "Sword combat animations",
-        "Shield blocks & parries",
-        "Bone-rattling attacks"
-      ]
-    },
-    {
-      id: "combat-robot",
-      name: "Combat Robot",
-      price: 1.00,
-      image: "/characters/combat-robot.png",
-      description: "Advanced combat robot with tech animations",
-      animations: "112 total animations (14 types × 8 directions)",
-      features: [
-        "Mechanical movement",
-        "Energy weapon attacks",
-        "Jet boost abilities",
-        "Sci-fi combat style"
-      ]
-    },
-    {
-      id: "farmer-tom",
-      name: "Farmer Tom",
-      price: 1.00,
-      image: "/characters/farmer-tom.png",
-      description: "Crypto-rich farmer character with gold chains, shades, and a cap",
-      animations: "240 total frames (8 rotations + 4 animation types × 8 directions)",
-      frameCount: 5,
-      features: [
-        "Picking Up, Drinking, Chopping Tree, and Fishing animations",
-        "Full 8-direction coverage",
-        "Farm-life personality style",
-        "Ready to use in top-down games"
-      ]
-    },
-    {
-      id: "alien-overlord-boss",
-      name: "Alien Overlord Boss",
-      price: 1.00,
-      image: "/characters/alien-overlord-boss.png",
-      description: "Ultimate alien boss with premium animations",
-      animations: "Unique boss-tier animation set",
-      frameCount: 1,
-      features: [
-        "Epic boss presence",
-        "Devastating attack patterns",
-        "Phase-change animations",
-        "Premium quality assets"
-      ]
-    },
-    {
       id: "spider-tank-vehicle",
       name: "Tank Vehicle",
       price: 5.00,
@@ -341,6 +101,66 @@ export default function Marketplace() {
         "High detail pixel art",
         "Tank hull with cannon turret",
         "Perfect for top-down games"
+      ]
+    },
+    {
+      id: "mg-spider-tank",
+      name: "MG Spider Tank",
+      price: 5.00,
+      image: "/characters/mg-spider-tank.png",
+      description: "Four-legged spider tank armed with a machine-gun turret",
+      animations: "24 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "24 combat animations included",
+        "168x168 high-detail pixel art",
+        "Four-legged tank design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "napalm-spider-tank",
+      name: "Napalm Spider Tank",
+      price: 5.00,
+      image: "/characters/napalm-spider-tank.png",
+      description: "Four-legged spider tank armed with a napalm launcher",
+      animations: "8 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "8 combat animations included",
+        "168x168 high-detail pixel art",
+        "Four-legged tank design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "rocket-spider-tank",
+      name: "Rocket Spider Tank",
+      price: 5.00,
+      image: "/characters/rocket-spider-tank.png",
+      description: "Four-legged spider tank armed with a rocket pod",
+      animations: "8 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "8 combat animations included",
+        "168x168 high-detail pixel art",
+        "Four-legged tank design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "laser-spider-tank",
+      name: "Laser Spider Tank",
+      price: 5.00,
+      image: "/characters/laser-spider-tank.png",
+      description: "Four-legged spider tank armed with a laser cannon",
+      animations: "8 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "8 combat animations included",
+        "168x168 high-detail pixel art",
+        "Four-legged tank design",
+        "Full asset pack included in download"
       ]
     },
     {
@@ -551,174 +371,6 @@ export default function Marketplace() {
         "PNG with transparency",
         "Great for forest and world decoration",
         "Multiple variants",
-        "Ready to use in top-down games"
-      ]
-    },
-    {
-      id: "foxstead-pumpkin-seeds",
-      name: "Pumpkin Seeds",
-      price: 2,
-      image: "/objects/foxstead-pumpkin-seeds.png",
-      description: "Single pumpkin seeds item icon",
-      items: "1 item icon",
-      features: [
-        "PNG with transparency",
-        "Perfect for inventory and world decoration",
-        "Matches Foxstead pixel art style",
-        "Ready to use in top-down games"
-      ]
-    },
-    {
-      id: "foxstead-fern-seeds",
-      name: "Fern Seeds",
-      price: 2,
-      image: "/objects/foxstead-fern-seeds.png",
-      description: "Single fern seeds item icon",
-      items: "1 item icon",
-      features: [
-        "PNG with transparency",
-        "Perfect for inventory and world decoration",
-        "Matches Foxstead pixel art style",
-        "Ready to use in top-down games"
-      ]
-    },
-    {
-      id: "foxstead-cotton-seeds",
-      name: "Cotton Seeds",
-      price: 2,
-      image: "/objects/foxstead-cotton-seeds.png",
-      description: "Single cotton seeds item icon",
-      items: "1 item icon",
-      features: [
-        "PNG with transparency",
-        "Perfect for inventory and world decoration",
-        "Matches Foxstead pixel art style",
-        "Ready to use in top-down games"
-      ]
-    },
-    {
-      id: "foxstead-carrot-seeds",
-      name: "Carrot Seeds",
-      price: 2,
-      image: "/objects/foxstead-carrot-seeds.png",
-      description: "Single carrot seeds item icon",
-      items: "1 item icon",
-      features: [
-        "PNG with transparency",
-        "Perfect for inventory and world decoration",
-        "Matches Foxstead pixel art style",
-        "Ready to use in top-down games"
-      ]
-    },
-    {
-      id: "foxstead-potato-seeds",
-      name: "Potato Seeds",
-      price: 2,
-      image: "/objects/foxstead-potato-seeds.png",
-      description: "Single potato seeds item icon",
-      items: "1 item icon",
-      features: [
-        "PNG with transparency",
-        "Perfect for inventory and world decoration",
-        "Matches Foxstead pixel art style",
-        "Ready to use in top-down games"
-      ]
-    },
-    {
-      id: "foxstead-cucumber-seeds",
-      name: "Cucumber Seeds",
-      price: 2,
-      image: "/objects/foxstead-cucumber-seeds.png",
-      description: "Single cucumber seeds item icon",
-      items: "1 item icon",
-      features: [
-        "PNG with transparency",
-        "Perfect for inventory and world decoration",
-        "Matches Foxstead pixel art style",
-        "Ready to use in top-down games"
-      ]
-    },
-    {
-      id: "foxstead-tomato-seeds",
-      name: "Tomato Seeds",
-      price: 2,
-      image: "/objects/foxstead-tomato-seeds.png",
-      description: "Single tomato seeds item icon",
-      items: "1 item icon",
-      features: [
-        "PNG with transparency",
-        "Perfect for inventory and world decoration",
-        "Matches Foxstead pixel art style",
-        "Ready to use in top-down games"
-      ]
-    },
-    {
-      id: "foxstead-grape-seeds",
-      name: "Grape Seeds",
-      price: 2,
-      image: "/objects/foxstead-grape-seeds.png",
-      description: "Single grape seeds item icon",
-      items: "1 item icon",
-      features: [
-        "PNG with transparency",
-        "Perfect for inventory and world decoration",
-        "Matches Foxstead pixel art style",
-        "Ready to use in top-down games"
-      ]
-    },
-    {
-      id: "foxstead-blue-flower-seeds",
-      name: "Blue Flower Seeds",
-      price: 2,
-      image: "/objects/foxstead-blue-flower-seeds.png",
-      description: "Single blue flower seeds item icon",
-      items: "1 item icon",
-      features: [
-        "PNG with transparency",
-        "Perfect for inventory and world decoration",
-        "Matches Foxstead pixel art style",
-        "Ready to use in top-down games"
-      ]
-    },
-    {
-      id: "foxstead-yellow-flower-seeds",
-      name: "Yellow Flower Seeds",
-      price: 2,
-      image: "/objects/foxstead-yellow-flower-seeds.png",
-      description: "Single yellow flower seeds item icon",
-      items: "1 item icon",
-      features: [
-        "PNG with transparency",
-        "Perfect for inventory and world decoration",
-        "Matches Foxstead pixel art style",
-        "Ready to use in top-down games"
-      ]
-    },
-    {
-      id: "foxstead-red-flower-seeds",
-      name: "Red Flower Seeds",
-      price: 2,
-      image: "/objects/foxstead-red-flower-seeds.png",
-      description: "Single red flower seeds item icon",
-      items: "1 item icon",
-      features: [
-        "PNG with transparency",
-        "Perfect for inventory and world decoration",
-        "Matches Foxstead pixel art style",
-        "Ready to use in top-down games"
-      ]
-    },
-    {
-      id: "foxstead-wheat-seeds",
-      name: "Wheat Seeds",
-      price: 2,
-      image: "/objects/foxstead-wheat-seeds.png",
-      description: "Single wheat seeds item icon",
-      items: "1 item icon",
-      features: [
-        "PNG with transparency",
-        "Perfect for inventory and world decoration",
-        "Matches Foxstead pixel art style",
         "Ready to use in top-down games"
       ]
     },
@@ -2062,51 +1714,6 @@ export default function Marketplace() {
       ]
     },
     {
-      id: "spinecrawler-skeleton",
-      name: "Spinecrawler Skeleton",
-      price: 5.00,
-      image: "/characters/spinecrawler-skeleton.png",
-      description: "Segmented centipede-spine skeleton with glowing titanium vertebrae and reactor nodes",
-      animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
-      features: [
-        "8-direction coverage",
-        "256x256 high-detail pixel art",
-        "Horror/dungeon enemy design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
-      id: "dragon-mech-boss",
-      name: "Dragon Mech Boss",
-      price: 5.00,
-      image: "/characters/dragon-mech-boss.png",
-      description: "Boss-tier dragon mech with idle and fire-breathing combat states",
-      animations: "16 total animations across 2 states (idle + breathing fire), 8-direction",
-      frameCount: 1,
-      features: [
-        "2 combat states included",
-        "256x256 high-detail pixel art",
-        "Boss-tier enemy design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
-      id: "wolf-mech",
-      name: "Wolf Mech",
-      price: 5.00,
-      image: "/characters/wolf-mech.png",
-      description: "Pro-tier wolf-inspired mech with a sleek predatory silhouette",
-      animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
-      features: [
-        "8-direction coverage",
-        "240x240 high-detail pixel art",
-        "Sci-fi predator mech design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
       id: "ancient-demon-golem",
       name: "Ancient Demon Golem",
       price: 5.00,
@@ -2212,66 +1819,6 @@ export default function Marketplace() {
       ]
     },
     {
-      id: "mg-spider-tank",
-      name: "MG Spider Tank",
-      price: 5.00,
-      image: "/characters/mg-spider-tank.png",
-      description: "Four-legged spider tank armed with a machine-gun turret",
-      animations: "24 total animations, 8-direction",
-      frameCount: 1,
-      features: [
-        "24 combat animations included",
-        "168x168 high-detail pixel art",
-        "Four-legged tank design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
-      id: "napalm-spider-tank",
-      name: "Napalm Spider Tank",
-      price: 5.00,
-      image: "/characters/napalm-spider-tank.png",
-      description: "Four-legged spider tank armed with a napalm launcher",
-      animations: "8 total animations, 8-direction",
-      frameCount: 1,
-      features: [
-        "8 combat animations included",
-        "168x168 high-detail pixel art",
-        "Four-legged tank design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
-      id: "rocket-spider-tank",
-      name: "Rocket Spider Tank",
-      price: 5.00,
-      image: "/characters/rocket-spider-tank.png",
-      description: "Four-legged spider tank armed with a rocket pod",
-      animations: "8 total animations, 8-direction",
-      frameCount: 1,
-      features: [
-        "8 combat animations included",
-        "168x168 high-detail pixel art",
-        "Four-legged tank design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
-      id: "laser-spider-tank",
-      name: "Laser Spider Tank",
-      price: 5.00,
-      image: "/characters/laser-spider-tank.png",
-      description: "Four-legged spider tank armed with a laser cannon",
-      animations: "8 total animations, 8-direction",
-      frameCount: 1,
-      features: [
-        "8 combat animations included",
-        "168x168 high-detail pixel art",
-        "Four-legged tank design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
       id: "stone-golem",
       name: "Stone Golem",
       price: 5.00,
@@ -2283,21 +1830,6 @@ export default function Marketplace() {
         "8-direction coverage",
         "188x188 high-detail pixel art",
         "Classic fantasy golem design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
-      id: "fierce-dragon",
-      name: "Fierce Dragon",
-      price: 5.00,
-      image: "/characters/fierce-dragon.png",
-      description: "Red and black scaled dragon with wings",
-      animations: "21 total animations, 8-direction",
-      frameCount: 1,
-      features: [
-        "21 combat animations included",
-        "236x236 high-detail pixel art",
-        "Winged dragon boss design",
         "Full asset pack included in download"
       ]
     },
@@ -2377,66 +1909,6 @@ export default function Marketplace() {
       ]
     },
     {
-      id: "crawler-x-havoc-bot",
-      name: "Crawler-X Havoc Bot",
-      price: 5.00,
-      image: "/characters/crawler-x-havoc-bot.png",
-      description: "Skittering quadruped mech with a tail-mounted sawblade and dual plasma cutters",
-      animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
-      features: [
-        "8-direction coverage",
-        "120x120 high-detail pixel art",
-        "Quadruped chaos mech design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
-      id: "bark-armor-reptile",
-      name: "Bark-Armor Reptile",
-      price: 5.00,
-      image: "/characters/bark-armor-reptile.png",
-      description: "Quadruped reptile clad in living bark armor fused with vines, wielding a bone-root cleaver",
-      animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
-      features: [
-        "8-direction coverage",
-        "256x256 high-detail pixel art",
-        "Forest monster design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
-      id: "green-mech-lizard",
-      name: "Green Mech Lizard",
-      price: 5.00,
-      image: "/characters/green-mech-lizard.png",
-      description: "Green mechanized lizard hybrid, cybernetic reptile design",
-      animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
-      features: [
-        "8-direction coverage",
-        "256x256 high-detail pixel art",
-        "Cybernetic reptile design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
-      id: "swamp-gangster-amphibian",
-      name: "Swamp Gangster Amphibian",
-      price: 5.00,
-      image: "/characters/swamp-gangster-amphibian.png",
-      description: "Evil swamp-dwelling amphibian gangster with gold chains and diamond-studded shades",
-      animations: "8-direction static sprite (single idle pose)",
-      frameCount: 1,
-      features: [
-        "8-direction coverage",
-        "80x80 pixel art",
-        "Gangster/swamp themed design",
-        "Full asset pack included in download"
-      ]
-    },
-    {
       id: "chig-the-outlaw",
       name: "Chig the Outlaw",
       price: 5.00,
@@ -2497,6 +1969,126 @@ export default function Marketplace() {
       ]
     },
     {
+      id: "spinecrawler-skeleton",
+      name: "Spinecrawler Skeleton",
+      price: 5.00,
+      image: "/characters/spinecrawler-skeleton.png",
+      description: "Segmented centipede-spine skeleton with glowing titanium vertebrae and reactor nodes",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "256x256 high-detail pixel art",
+        "Horror/dungeon enemy design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "dragon-mech-boss",
+      name: "Dragon Mech Boss",
+      price: 5.00,
+      image: "/characters/dragon-mech-boss.png",
+      description: "Boss-tier dragon mech with idle and fire-breathing combat states",
+      animations: "16 total animations across 2 states (idle + breathing fire), 8-direction",
+      frameCount: 1,
+      features: [
+        "2 combat states included",
+        "256x256 high-detail pixel art",
+        "Boss-tier enemy design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "wolf-mech",
+      name: "Wolf Mech",
+      price: 5.00,
+      image: "/characters/wolf-mech.png",
+      description: "Pro-tier wolf-inspired mech with a sleek predatory silhouette",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "240x240 high-detail pixel art",
+        "Sci-fi predator mech design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "fierce-dragon",
+      name: "Fierce Dragon",
+      price: 5.00,
+      image: "/characters/fierce-dragon.png",
+      description: "Red and black scaled dragon with wings",
+      animations: "21 total animations, 8-direction",
+      frameCount: 1,
+      features: [
+        "21 combat animations included",
+        "236x236 high-detail pixel art",
+        "Winged dragon boss design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "crawler-x-havoc-bot",
+      name: "Crawler-X Havoc Bot",
+      price: 5.00,
+      image: "/characters/crawler-x-havoc-bot.png",
+      description: "Skittering quadruped mech with a tail-mounted sawblade and dual plasma cutters",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "120x120 high-detail pixel art",
+        "Quadruped chaos mech design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "bark-armor-reptile",
+      name: "Bark-Armor Reptile",
+      price: 5.00,
+      image: "/characters/bark-armor-reptile.png",
+      description: "Quadruped reptile clad in living bark armor fused with vines, wielding a bone-root cleaver",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "256x256 high-detail pixel art",
+        "Forest monster design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "green-mech-lizard",
+      name: "Green Mech Lizard",
+      price: 5.00,
+      image: "/characters/green-mech-lizard.png",
+      description: "Green mechanized lizard hybrid, cybernetic reptile design",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "256x256 high-detail pixel art",
+        "Cybernetic reptile design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "swamp-gangster-amphibian",
+      name: "Swamp Gangster Amphibian",
+      price: 5.00,
+      image: "/characters/swamp-gangster-amphibian.png",
+      description: "Evil swamp-dwelling amphibian gangster with gold chains and diamond-studded shades",
+      animations: "8-direction static sprite (single idle pose)",
+      frameCount: 1,
+      features: [
+        "8-direction coverage",
+        "80x80 pixel art",
+        "Gangster/swamp themed design",
+        "Full asset pack included in download"
+      ]
+    },
+    {
       id: "green-alien-player",
       name: "Green Alien Player",
       price: 5.00,
@@ -2509,6 +2101,246 @@ export default function Marketplace() {
         "48x48 pixel art",
         "Tagged as a player character",
         "Full asset pack included in download"
+      ]
+    },
+    {
+      id: "yellow-ghost-specter",
+      name: "Yellow Ghost Specter",
+      price: 1.00,
+      image: "/characters/yellow-ghost-specter.png",
+      description: "8-direction animated ghost character with 18 combat animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Combat moves: punches, kicks, fireballs",
+        "Special attacks: hurricane kick, flying kick",
+        "Getting hit & death animations"
+      ]
+    },
+    {
+      id: "orange-ghost-specter",
+      name: "Orange Ghost Specter",
+      price: 1.00,
+      image: "/characters/orange-ghost-specter.png",
+      description: "Fiery orange ghost with full combat animation set",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Combat moves: punches, kicks, fireballs",
+        "Special attacks: hurricane kick, flying kick",
+        "Getting hit & death animations"
+      ]
+    },
+    {
+      id: "red-ghost-specter",
+      name: "Red Ghost Specter",
+      price: 1.00,
+      image: "/characters/red-ghost-specter.png",
+      description: "Aggressive red ghost with complete animation pack",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Combat moves: punches, kicks, fireballs",
+        "Special attacks: hurricane kick, flying kick",
+        "Getting hit & death animations"
+      ]
+    },
+    {
+      id: "green-ghost-specter",
+      name: "Green Ghost Specter",
+      price: 1.00,
+      image: "/characters/green-ghost-specter.png",
+      description: "Toxic green ghost with full combat animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Combat moves: punches, kicks, fireballs",
+        "Special attacks: hurricane kick, flying kick",
+        "Getting hit & death animations"
+      ]
+    },
+    {
+      id: "blue-ghost-specter",
+      name: "Blue Ghost Specter",
+      price: 1.00,
+      image: "/characters/blue-ghost-specter.png",
+      description: "Icy blue ghost with complete animation set",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Combat moves: punches, kicks, fireballs",
+        "Special attacks: hurricane kick, flying kick",
+        "Getting hit & death animations"
+      ]
+    },
+    {
+      id: "fire-elemental",
+      name: "Fire Elemental",
+      price: 1.00,
+      image: "/characters/fire-elemental.png",
+      description: "Blazing fire elemental with explosive animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Powerful fireball attacks",
+        "Hurricane kick, flying kick",
+        "Combat and reaction animations"
+      ]
+    },
+    {
+      id: "steam-elemental",
+      name: "Steam Elemental",
+      price: 1.00,
+      image: "/characters/steam-elemental.png",
+      description: "Mystical steam elemental with flowing animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Steam-based attacks",
+        "Full combat move set",
+        "Unique visual effects"
+      ]
+    },
+    {
+      id: "frost-elemental",
+      name: "Frost Elemental",
+      price: 1.00,
+      image: "/characters/frost-elemental.png",
+      description: "Frozen frost elemental with icy animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Ice-based attacks",
+        "Complete combat set",
+        "Freezing effects"
+      ]
+    },
+    {
+      id: "blood-elemental",
+      name: "Blood Elemental",
+      price: 1.00,
+      image: "/characters/blood-elemental.png",
+      description: "Dark blood elemental with menacing animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Blood-based attacks",
+        "Full combat animations",
+        "Dark visual effects"
+      ]
+    },
+    {
+      id: "acid-elemental",
+      name: "Acid Elemental",
+      price: 1.00,
+      image: "/characters/acid-elemental.png",
+      description: "Corrosive acid elemental with toxic animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Acid splash attacks",
+        "Complete combat set",
+        "Toxic effects"
+      ]
+    },
+    {
+      id: "ice-golem",
+      name: "Ice Golem",
+      price: 1.00,
+      image: "/characters/ice-golem.png",
+      description: "Massive ice golem with powerful animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Heavy walking & running",
+        "Devastating melee attacks",
+        "Ground pound abilities",
+        "Boss-tier animations"
+      ]
+    },
+    {
+      id: "shadow-being",
+      name: "Shadow Being",
+      price: 1.00,
+      image: "/characters/shadow-being.png",
+      description: "Mysterious shadow entity with dark animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Ethereal movement",
+        "Shadow-based attacks",
+        "Stealth animations",
+        "Unique visual style"
+      ]
+    },
+    {
+      id: "ghost-specter",
+      name: "Ghost Specter",
+      price: 1.00,
+      image: "/characters/ghost-specter.png",
+      description: "Classic ghost specter with full combat set",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Walking, running, idle animations",
+        "Combat moves: punches, kicks, fireballs",
+        "Special attacks",
+        "Reaction animations"
+      ]
+    },
+    {
+      id: "skeleton-warrior",
+      name: "Skeleton Warrior",
+      price: 1.00,
+      image: "/characters/skeleton-warrior.png",
+      description: "Undead skeleton warrior with melee combat",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Armored skeleton design",
+        "Sword combat animations",
+        "Shield blocks & parries",
+        "Bone-rattling attacks"
+      ]
+    },
+    {
+      id: "combat-robot",
+      name: "Combat Robot",
+      price: 1.00,
+      image: "/characters/combat-robot.png",
+      description: "Advanced combat robot with tech animations",
+      animations: "112 total animations (14 types × 8 directions)",
+      features: [
+        "Mechanical movement",
+        "Energy weapon attacks",
+        "Jet boost abilities",
+        "Sci-fi combat style"
+      ]
+    },
+    {
+      id: "farmer-tom",
+      name: "Farmer Tom",
+      price: 1.00,
+      image: "/characters/farmer-tom.png",
+      description: "Crypto-rich farmer character with gold chains, shades, and a cap",
+      animations: "240 total frames (8 rotations + 4 animation types × 8 directions)",
+      frameCount: 5,
+      features: [
+        "Picking Up, Drinking, Chopping Tree, and Fishing animations",
+        "Full 8-direction coverage",
+        "Farm-life personality style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "alien-overlord-boss",
+      name: "Alien Overlord Boss",
+      price: 1.00,
+      image: "/characters/alien-overlord-boss.png",
+      description: "Ultimate alien boss with premium animations",
+      animations: "Unique boss-tier animation set",
+      frameCount: 1,
+      features: [
+        "Epic boss presence",
+        "Devastating attack patterns",
+        "Phase-change animations",
+        "Premium quality assets"
       ]
     },
     {
@@ -2890,6 +2722,180 @@ export default function Marketplace() {
       ]
     }
   ]
+
+  // Pulled off the live site but kept ready to re-list on request — not
+  // referenced anywhere in rendering.
+  const hiddenProducts = [
+    {
+      id: "foxstead-pumpkin-seeds",
+      name: "Pumpkin Seeds",
+      price: 2,
+      image: "/objects/foxstead-pumpkin-seeds.png",
+      description: "Single pumpkin seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-fern-seeds",
+      name: "Fern Seeds",
+      price: 2,
+      image: "/objects/foxstead-fern-seeds.png",
+      description: "Single fern seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-cotton-seeds",
+      name: "Cotton Seeds",
+      price: 2,
+      image: "/objects/foxstead-cotton-seeds.png",
+      description: "Single cotton seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-carrot-seeds",
+      name: "Carrot Seeds",
+      price: 2,
+      image: "/objects/foxstead-carrot-seeds.png",
+      description: "Single carrot seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-potato-seeds",
+      name: "Potato Seeds",
+      price: 2,
+      image: "/objects/foxstead-potato-seeds.png",
+      description: "Single potato seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-cucumber-seeds",
+      name: "Cucumber Seeds",
+      price: 2,
+      image: "/objects/foxstead-cucumber-seeds.png",
+      description: "Single cucumber seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-tomato-seeds",
+      name: "Tomato Seeds",
+      price: 2,
+      image: "/objects/foxstead-tomato-seeds.png",
+      description: "Single tomato seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-grape-seeds",
+      name: "Grape Seeds",
+      price: 2,
+      image: "/objects/foxstead-grape-seeds.png",
+      description: "Single grape seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-blue-flower-seeds",
+      name: "Blue Flower Seeds",
+      price: 2,
+      image: "/objects/foxstead-blue-flower-seeds.png",
+      description: "Single blue flower seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-yellow-flower-seeds",
+      name: "Yellow Flower Seeds",
+      price: 2,
+      image: "/objects/foxstead-yellow-flower-seeds.png",
+      description: "Single yellow flower seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-red-flower-seeds",
+      name: "Red Flower Seeds",
+      price: 2,
+      image: "/objects/foxstead-red-flower-seeds.png",
+      description: "Single red flower seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    },
+    {
+      id: "foxstead-wheat-seeds",
+      name: "Wheat Seeds",
+      price: 2,
+      image: "/objects/foxstead-wheat-seeds.png",
+      description: "Single wheat seeds item icon",
+      items: "1 item icon",
+      features: [
+        "PNG with transparency",
+        "Perfect for inventory and world decoration",
+        "Matches Foxstead pixel art style",
+        "Ready to use in top-down games"
+      ]
+    }
+  ]
+
   // Separate characters, objects, and tilesets
   const characters = products.filter(p => p.animations);
   const objects = products.filter(p => p.items);
