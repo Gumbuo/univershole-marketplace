@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/banner.jpg",
-        width: 1200,
-        height: 630,
+        width: 1536,
+        height: 1024,
         alt: "FoxHole's Pixel Characters and Maps Marketplace",
       },
     ],
