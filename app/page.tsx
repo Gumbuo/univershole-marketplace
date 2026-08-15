@@ -2865,20 +2865,36 @@ export default function Marketplace() {
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-900/50 to-gray-900"></div>
         </div>
         <div className="container mx-auto px-4 py-16 relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-              Pixel Characters and Maps Marketplace
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-4">
-              Premium Pixel Art Game Characters
-            </p>
-            <p className="text-lg text-gray-400 mb-8">
-              Pay with crypto • Instant download • Commercial license included
-            </p>
-            <div className="flex justify-center gap-4 text-sm text-gray-400">
-              <span>✓ 8-Direction Sprites</span>
-              <span>✓ Combat Animations</span>
-              <span>✓ Ready for Godot/Unity</span>
+          <div className="text-center max-w-4xl mx-auto flex justify-center">
+            <div
+              className="max-w-2xl"
+              style={{
+                borderWidth: '48px',
+                borderStyle: 'solid',
+                borderColor: 'rgba(120, 150, 190, 0.4)',
+                borderImage: 'url(/pixellab-referral-border.png) 80 90 / 48px stretch',
+                background: 'linear-gradient(135deg, rgba(80, 110, 150, 0.10), rgba(60, 90, 130, 0.08))',
+                padding: '30px 20px',
+              }}
+            >
+              <h1 className="mb-4 flex justify-center">
+                <img
+                  src="/zelda-header-title.png"
+                  alt="Pixel Characters and Maps Marketplace"
+                  style={{ height: 'auto', width: '100%', maxWidth: '500px', imageRendering: 'pixelated' }}
+                />
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-300 mb-4">
+                Premium Pixel Art Game Characters
+              </p>
+              <p className="text-lg text-gray-400 mb-8">
+                Pay with crypto • Instant download • Commercial license included
+              </p>
+              <div className="flex justify-center gap-4 text-sm text-gray-400">
+                <span>✓ 8-Direction Sprites</span>
+                <span>✓ Combat Animations</span>
+                <span>✓ Ready for Godot/Unity</span>
+              </div>
             </div>
           </div>
         </div>
